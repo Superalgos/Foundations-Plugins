@@ -1,0 +1,573 @@
+{
+    "type": "API Map",
+    "name": "Alternative.me API",
+    "config": "{\r\n    \"codeName\": \"Alternative.me-API\",\r\n    \"protocol\": \"https\",\r\n    \"portNumber\": \"\",\r\n    \"hostName\": \"api.alternative.me\",\r\n    \"millisecondsBetweenCalls\": 10000\r\n}",
+    "project": "Foundations",
+    "apiVersions": [
+        {
+            "type": "API Version",
+            "name": "fng",
+            "config": "{\r\n    \"codeName\": \"fng\"\r\n}",
+            "project": "Foundations",
+            "apiEndpoints": [
+                {
+                    "type": "API Endpoint",
+                    "name": "Empty",
+                    "config": "{\r\n    \"codeName\": \"\"\r\n}",
+                    "project": "Foundations",
+                    "apiQueryResponses": {
+                        "type": "API Query Responses",
+                        "name": "New API Query Responses",
+                        "project": "Foundations",
+                        "apiQueryResponses": [
+                            {
+                                "type": "API Query Response",
+                                "name": "200 Success",
+                                "config": "{\r\n    \"codeName\": \"200\",\r\n    \"isError\": false\r\n}",
+                                "project": "Foundations",
+                                "apiResponseSchema": {
+                                    "type": "API Response Schema",
+                                    "name": "New API Response Schema",
+                                    "config": "{\r\n    \"nodePath\": \"apiResponseReceivedObject\"\r\n}",
+                                    "project": "Foundations",
+                                    "apiResponseFields": {
+                                        "type": "API Response Field",
+                                        "name": "rootObject",
+                                        "config": "{\r\n    \"codeName\": \"rootObject\",\r\n    \"fieldType\": \"object\",\r\n    \"description\": \"This is the root object.\"\r\n}",
+                                        "project": "Foundations",
+                                        "apiResponseFields": [
+                                            {
+                                                "type": "API Response Field",
+                                                "name": "Data",
+                                                "config": "{\r\n    \"codeName\": \"data\",\r\n    \"fieldType\": \"array\",\r\n    \"description\": \"This is the data field in the API response\"\r\n}",
+                                                "project": "Foundations",
+                                                "apiResponseFields": [
+                                                    {
+                                                        "type": "API Response Field",
+                                                        "name": "New API Response Field",
+                                                        "config": "{\r\n    \"codeName\": \"[0]\",\r\n    \"fieldType\": \"array\",\r\n    \"description\": \"This is the first object in the array received.\"\r\n}",
+                                                        "project": "Foundations",
+                                                        "apiResponseFields": [
+                                                            {
+                                                                "type": "API Response Field",
+                                                                "name": "json",
+                                                                "config": "{\r\n    \"codeName\": \"[0]\",\r\n    \"fieldType\": \"object\",\r\n    \"description\": \"This is the first .json object in the array.\"\r\n}",
+                                                                "project": "Foundations",
+                                                                "apiResponseFields": [
+                                                                    {
+                                                                        "type": "API Response Field",
+                                                                        "name": "Timestamp",
+                                                                        "config": "{\r\n    \"codeName\": \"timestamp\",\r\n    \"fieldType\": \"string\",\r\n    \"description\": \"This is the timestamp of the data received.\"\r\n}",
+                                                                        "project": "Foundations",
+                                                                        "apiResponseFields": [],
+                                                                        "id": "ea4c5845-bd69-41a4-9b7b-b1d6a33ec002",
+                                                                        "savedPayload": {
+                                                                            "position": {
+                                                                                "x": 13900.653161116526,
+                                                                                "y": 10160.534632310704
+                                                                            },
+                                                                            "targetPosition": {
+                                                                                "x": 13688.521126760563,
+                                                                                "y": 10372.666666666668
+                                                                            },
+                                                                            "floatingObject": {
+                                                                                "isPinned": false,
+                                                                                "isFrozen": false,
+                                                                                "isCollapsed": false,
+                                                                                "angleToParent": 2,
+                                                                                "distanceToParent": 3,
+                                                                                "arrangementStyle": 0
+                                                                            },
+                                                                            "uiObject": {
+                                                                                "isRunning": false
+                                                                            },
+                                                                            "parentNode": {
+                                                                                "type": "API Response Field",
+                                                                                "name": "json",
+                                                                                "id": "e2dd5c2e-cd71-4958-85b3-d3dfe6991468"
+                                                                            },
+                                                                            "chainParent": {
+                                                                                "type": "API Response Field",
+                                                                                "name": "json",
+                                                                                "id": "e2dd5c2e-cd71-4958-85b3-d3dfe6991468"
+                                                                            },
+                                                                            "referenceChildren": [
+                                                                                {
+                                                                                    "type": "API Response Field Reference",
+                                                                                    "name": "Timestamp",
+                                                                                    "id": "eb23204b-cd83-4b41-a254-ec2dc92084a1"
+                                                                                },
+                                                                                {
+                                                                                    "type": "API Response Field Reference",
+                                                                                    "name": "Timestamp",
+                                                                                    "id": "d52be2cc-9fcf-400f-86d3-418ba577b777"
+                                                                                },
+                                                                                {
+                                                                                    "type": "API Response Field Reference",
+                                                                                    "name": "Timestamp",
+                                                                                    "id": "0900e4fb-2fe8-4c1b-a460-f22376f35668"
+                                                                                },
+                                                                                {
+                                                                                    "type": "API Response Field Reference",
+                                                                                    "name": "Timestamp",
+                                                                                    "id": "a052494c-8d1c-43cc-814d-d27eadf566c7"
+                                                                                },
+                                                                                {
+                                                                                    "type": "API Response Field Reference",
+                                                                                    "name": "Timestamp",
+                                                                                    "id": "75dfb8fa-df0f-411d-bd2d-aa4f9924d267"
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    },
+                                                                    {
+                                                                        "type": "API Response Field",
+                                                                        "name": "Value",
+                                                                        "config": "{\r\n    \"codeName\": \"value\",\r\n    \"fieldType\": \"number\",\r\n    \"description\": \"This is the value given to the Fear/Greed index.\"\r\n}",
+                                                                        "project": "Foundations",
+                                                                        "apiResponseFields": [],
+                                                                        "id": "6f4ec552-d3cc-4f32-a3b1-d799e41e7479",
+                                                                        "savedPayload": {
+                                                                            "position": {
+                                                                                "x": 13988.521126760563,
+                                                                                "y": 10372.666666666668
+                                                                            },
+                                                                            "targetPosition": {
+                                                                                "x": 13688.521126760563,
+                                                                                "y": 10372.666666666668
+                                                                            },
+                                                                            "floatingObject": {
+                                                                                "isPinned": false,
+                                                                                "isFrozen": false,
+                                                                                "isCollapsed": false,
+                                                                                "angleToParent": 2,
+                                                                                "distanceToParent": 3,
+                                                                                "arrangementStyle": 0
+                                                                            },
+                                                                            "uiObject": {
+                                                                                "isRunning": false
+                                                                            },
+                                                                            "parentNode": {
+                                                                                "type": "API Response Field",
+                                                                                "name": "json",
+                                                                                "id": "e2dd5c2e-cd71-4958-85b3-d3dfe6991468"
+                                                                            },
+                                                                            "chainParent": {
+                                                                                "type": "API Response Field",
+                                                                                "name": "json",
+                                                                                "id": "e2dd5c2e-cd71-4958-85b3-d3dfe6991468"
+                                                                            },
+                                                                            "referenceChildren": [
+                                                                                {
+                                                                                    "type": "API Response Field Reference",
+                                                                                    "name": "Value",
+                                                                                    "id": "21182c77-5c50-47ea-a06f-9faba23363fe"
+                                                                                },
+                                                                                {
+                                                                                    "type": "API Response Field Reference",
+                                                                                    "name": "Value",
+                                                                                    "id": "c7c2d1d4-02b3-4ea7-8ab9-f4b9e92b986c"
+                                                                                },
+                                                                                {
+                                                                                    "type": "API Response Field Reference",
+                                                                                    "name": "Value",
+                                                                                    "id": "5e08796a-ea91-4d1f-a903-fb21d131f60b"
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    },
+                                                                    {
+                                                                        "type": "API Response Field",
+                                                                        "name": "Value Classification",
+                                                                        "config": "{\r\n    \"codeName\": \"value_classification\",\r\n    \"fieldType\": \"string\",\r\n    \"description\": \"This is how the value is classified.\"\r\n}",
+                                                                        "project": "Foundations",
+                                                                        "apiResponseFields": [],
+                                                                        "id": "1d9df732-aba6-41f9-ab60-ee8ee0d14e1d",
+                                                                        "savedPayload": {
+                                                                            "position": {
+                                                                                "x": 13900.653161116526,
+                                                                                "y": 10584.798701022632
+                                                                            },
+                                                                            "targetPosition": {
+                                                                                "x": 13688.521126760563,
+                                                                                "y": 10372.666666666668
+                                                                            },
+                                                                            "floatingObject": {
+                                                                                "isPinned": false,
+                                                                                "isFrozen": false,
+                                                                                "isCollapsed": false,
+                                                                                "angleToParent": 2,
+                                                                                "distanceToParent": 3,
+                                                                                "arrangementStyle": 0
+                                                                            },
+                                                                            "uiObject": {
+                                                                                "isRunning": false
+                                                                            },
+                                                                            "parentNode": {
+                                                                                "type": "API Response Field",
+                                                                                "name": "json",
+                                                                                "id": "e2dd5c2e-cd71-4958-85b3-d3dfe6991468"
+                                                                            },
+                                                                            "chainParent": {
+                                                                                "type": "API Response Field",
+                                                                                "name": "json",
+                                                                                "id": "e2dd5c2e-cd71-4958-85b3-d3dfe6991468"
+                                                                            },
+                                                                            "referenceChildren": [
+                                                                                {
+                                                                                    "type": "API Response Field Reference",
+                                                                                    "name": "Value Classification",
+                                                                                    "id": "a13b959f-1cb3-4ace-bcef-d62f2478809e"
+                                                                                },
+                                                                                {
+                                                                                    "type": "API Response Field Reference",
+                                                                                    "name": "Value Classification",
+                                                                                    "id": "e47e1ef6-6103-49d8-879b-993cfee55f09"
+                                                                                },
+                                                                                {
+                                                                                    "type": "API Response Field Reference",
+                                                                                    "name": "Value Classification",
+                                                                                    "id": "f1b57658-4fb6-4e6b-995f-fe9864b034b1"
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    }
+                                                                ],
+                                                                "id": "cc075834-68d2-4cc9-9250-31082cb346c7",
+                                                                "savedPayload": {
+                                                                    "position": {
+                                                                        "x": 13688.521126760563,
+                                                                        "y": 10372.666666666668
+                                                                    },
+                                                                    "targetPosition": {
+                                                                        "x": 13388.521126760563,
+                                                                        "y": 10372.666666666668
+                                                                    },
+                                                                    "floatingObject": {
+                                                                        "isPinned": false,
+                                                                        "isFrozen": false,
+                                                                        "isCollapsed": false,
+                                                                        "angleToParent": 2,
+                                                                        "distanceToParent": 3,
+                                                                        "arrangementStyle": 0
+                                                                    },
+                                                                    "uiObject": {
+                                                                        "isRunning": false
+                                                                    },
+                                                                    "parentNode": {
+                                                                        "type": "API Response Field",
+                                                                        "name": "New API Response Field",
+                                                                        "id": "14a4898c-12f1-4bbe-ad52-f113b9e10247"
+                                                                    },
+                                                                    "chainParent": {
+                                                                        "type": "API Response Field",
+                                                                        "name": "New API Response Field",
+                                                                        "id": "14a4898c-12f1-4bbe-ad52-f113b9e10247"
+                                                                    }
+                                                                }
+                                                            }
+                                                        ],
+                                                        "id": "7acc9a3c-7ce2-46b5-a045-ad84b6613d57",
+                                                        "savedPayload": {
+                                                            "position": {
+                                                                "x": 13388.521126760563,
+                                                                "y": 10372.666666666668
+                                                            },
+                                                            "targetPosition": {
+                                                                "x": 13088.521126760563,
+                                                                "y": 10372.666666666668
+                                                            },
+                                                            "floatingObject": {
+                                                                "isPinned": false,
+                                                                "isFrozen": false,
+                                                                "isCollapsed": false,
+                                                                "angleToParent": 2,
+                                                                "distanceToParent": 3,
+                                                                "arrangementStyle": 0
+                                                            },
+                                                            "uiObject": {
+                                                                "isRunning": false
+                                                            },
+                                                            "parentNode": {
+                                                                "type": "API Response Field",
+                                                                "name": "Data",
+                                                                "id": "609109a5-1adf-484d-82b1-5d4caa48a8a6"
+                                                            },
+                                                            "chainParent": {
+                                                                "type": "API Response Field",
+                                                                "name": "Data",
+                                                                "id": "609109a5-1adf-484d-82b1-5d4caa48a8a6"
+                                                            }
+                                                        }
+                                                    }
+                                                ],
+                                                "id": "42efd3ba-5ca5-4df7-92e4-23c7f7eb97c7",
+                                                "savedPayload": {
+                                                    "position": {
+                                                        "x": 13088.521126760563,
+                                                        "y": 10372.666666666668
+                                                    },
+                                                    "targetPosition": {
+                                                        "x": 12788.521126760563,
+                                                        "y": 10372.666666666668
+                                                    },
+                                                    "floatingObject": {
+                                                        "isPinned": false,
+                                                        "isFrozen": false,
+                                                        "isCollapsed": false,
+                                                        "angleToParent": 2,
+                                                        "distanceToParent": 3,
+                                                        "arrangementStyle": 0
+                                                    },
+                                                    "uiObject": {
+                                                        "isRunning": false
+                                                    },
+                                                    "parentNode": {
+                                                        "type": "API Response Field",
+                                                        "name": "rootObject",
+                                                        "id": "7c8bcdaa-5671-4599-a127-85b241b14165"
+                                                    },
+                                                    "chainParent": {
+                                                        "type": "API Response Field",
+                                                        "name": "rootObject",
+                                                        "id": "7c8bcdaa-5671-4599-a127-85b241b14165"
+                                                    }
+                                                }
+                                            }
+                                        ],
+                                        "id": "922e6240-1fe0-4d77-b260-8fd0b5e8afbd",
+                                        "savedPayload": {
+                                            "position": {
+                                                "x": 12788.521126760563,
+                                                "y": 10372.666666666668
+                                            },
+                                            "targetPosition": {
+                                                "x": 12488.521126760563,
+                                                "y": 10372.666666666668
+                                            },
+                                            "floatingObject": {
+                                                "isPinned": false,
+                                                "isFrozen": false,
+                                                "isCollapsed": false,
+                                                "angleToParent": 1,
+                                                "distanceToParent": 3,
+                                                "arrangementStyle": 0
+                                            },
+                                            "uiObject": {
+                                                "isRunning": false
+                                            },
+                                            "parentNode": {
+                                                "type": "API Response Schema",
+                                                "name": "New API Response Schema",
+                                                "id": "d7e30d0c-cc09-488b-af9f-bcf0d9eaf719"
+                                            },
+                                            "chainParent": {
+                                                "type": "API Response Schema",
+                                                "name": "New API Response Schema",
+                                                "id": "d7e30d0c-cc09-488b-af9f-bcf0d9eaf719"
+                                            }
+                                        }
+                                    },
+                                    "id": "b4326361-6994-46d5-9359-4bfa1865a0e1",
+                                    "savedPayload": {
+                                        "position": {
+                                            "x": 12488.521126760563,
+                                            "y": 10372.666666666668
+                                        },
+                                        "targetPosition": {
+                                            "x": 12188.521126760563,
+                                            "y": 10372.666666666668
+                                        },
+                                        "floatingObject": {
+                                            "isPinned": false,
+                                            "isFrozen": false,
+                                            "isCollapsed": false,
+                                            "angleToParent": 1,
+                                            "distanceToParent": 3,
+                                            "arrangementStyle": 0
+                                        },
+                                        "uiObject": {
+                                            "isRunning": false
+                                        },
+                                        "parentNode": {
+                                            "type": "API Query Response",
+                                            "name": "200 Success",
+                                            "id": "b79e2966-80ff-4fe7-8bea-849989e40842"
+                                        },
+                                        "chainParent": {
+                                            "type": "API Query Response",
+                                            "name": "200 Success",
+                                            "id": "b79e2966-80ff-4fe7-8bea-849989e40842"
+                                        }
+                                    }
+                                },
+                                "id": "5297f968-0d71-4e4e-9e0f-686e3648ce2e",
+                                "savedPayload": {
+                                    "position": {
+                                        "x": 12188.521126760563,
+                                        "y": 10372.666666666668
+                                    },
+                                    "targetPosition": {
+                                        "x": 11888.521126760563,
+                                        "y": 10372.666666666668
+                                    },
+                                    "floatingObject": {
+                                        "isPinned": false,
+                                        "isFrozen": false,
+                                        "isCollapsed": false,
+                                        "angleToParent": 1,
+                                        "distanceToParent": 3,
+                                        "arrangementStyle": 0
+                                    },
+                                    "uiObject": {
+                                        "isRunning": false
+                                    },
+                                    "parentNode": {
+                                        "type": "API Query Responses",
+                                        "name": "New API Query Responses",
+                                        "id": "3b0135de-af0b-41ad-9b3f-3c4f38f75de2"
+                                    },
+                                    "chainParent": {
+                                        "type": "API Query Responses",
+                                        "name": "New API Query Responses",
+                                        "id": "3b0135de-af0b-41ad-9b3f-3c4f38f75de2"
+                                    }
+                                }
+                            }
+                        ],
+                        "id": "c6630b96-7f35-4bc4-81bc-b59f5aae4045",
+                        "savedPayload": {
+                            "position": {
+                                "x": 11888.521126760563,
+                                "y": 10372.666666666668
+                            },
+                            "targetPosition": {
+                                "x": 11588.521126760563,
+                                "y": 10372.666666666668
+                            },
+                            "floatingObject": {
+                                "isPinned": false,
+                                "isFrozen": false,
+                                "isCollapsed": false,
+                                "angleToParent": 1,
+                                "distanceToParent": 3,
+                                "arrangementStyle": 0
+                            },
+                            "uiObject": {
+                                "isRunning": false
+                            },
+                            "parentNode": {
+                                "type": "API Endpoint",
+                                "name": "Empty",
+                                "id": "d3c32c04-9571-4855-8df6-b2ce5405a943"
+                            },
+                            "chainParent": {
+                                "type": "API Endpoint",
+                                "name": "Empty",
+                                "id": "d3c32c04-9571-4855-8df6-b2ce5405a943"
+                            }
+                        }
+                    },
+                    "id": "2e392f3e-fb60-492f-9ed1-f4815c7e0ada",
+                    "savedPayload": {
+                        "position": {
+                            "x": 11588.521126760563,
+                            "y": 10372.666666666668
+                        },
+                        "targetPosition": {
+                            "x": 11288.521126760563,
+                            "y": 10372.666666666668
+                        },
+                        "floatingObject": {
+                            "isPinned": false,
+                            "isFrozen": false,
+                            "isCollapsed": false,
+                            "angleToParent": 1,
+                            "distanceToParent": 3,
+                            "arrangementStyle": 0
+                        },
+                        "uiObject": {
+                            "isRunning": false
+                        },
+                        "parentNode": {
+                            "type": "API Version",
+                            "name": "fng",
+                            "id": "147b31bc-2d57-4c0a-bff2-8f98161faf13"
+                        },
+                        "chainParent": {
+                            "type": "API Version",
+                            "name": "fng",
+                            "id": "147b31bc-2d57-4c0a-bff2-8f98161faf13"
+                        }
+                    }
+                }
+            ],
+            "id": "44cdb0f8-05fb-4d3e-8555-88059d5b0dfc",
+            "savedPayload": {
+                "position": {
+                    "x": 11288.521126760563,
+                    "y": 10372.666666666668
+                },
+                "targetPosition": {
+                    "x": 10988.521126760563,
+                    "y": 10372.666666666668
+                },
+                "floatingObject": {
+                    "isPinned": false,
+                    "isFrozen": false,
+                    "isCollapsed": true,
+                    "angleToParent": 1,
+                    "distanceToParent": 3,
+                    "arrangementStyle": 0
+                },
+                "uiObject": {
+                    "isRunning": false
+                },
+                "parentNode": {
+                    "type": "API Map",
+                    "name": "Alternative.me API",
+                    "id": "a60c1167-9ab8-4784-876f-2c842cc918f4"
+                },
+                "chainParent": {
+                    "type": "API Map",
+                    "name": "Alternative.me API",
+                    "id": "a60c1167-9ab8-4784-876f-2c842cc918f4"
+                }
+            }
+        }
+    ],
+    "id": "1242a994-2d63-447a-bb86-5c2b556c65f7",
+    "savedPayload": {
+        "position": {
+            "x": 10988.521126760563,
+            "y": 10372.666666666668
+        },
+        "targetPosition": {
+            "x": 10988.521126760563,
+            "y": 10372.666666666668
+        },
+        "floatingObject": {
+            "isPinned": false,
+            "isFrozen": false,
+            "isCollapsed": true,
+            "angleToParent": 1,
+            "distanceToParent": 3,
+            "arrangementStyle": 0
+        },
+        "uiObject": {
+            "isRunning": false
+        },
+        "referenceChildren": [
+            {
+                "type": "API Map Reference",
+                "name": "Alternative.me API",
+                "id": "b7e8e7e0-ebf6-4c19-ab94-ccfe16afdce6"
+            },
+            {
+                "type": "API Map Reference",
+                "name": "Alternative.me API",
+                "id": "bbb3edd9-6ed5-4c68-8bc0-ac0719200eaf"
+            }
+        ]
+    }
+}
