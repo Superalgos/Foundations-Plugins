@@ -1,0 +1,691 @@
+{
+    "type": "API Map",
+    "name": "Twitter",
+    "config": "{\r\n    \"codeName\": \"Twitter\",\r\n    \"protocol\": \"https\",\r\n    \"hostName\": \"api.twitter.com\",\r\n    \"portNumber\": \"\",\r\n    \"path\": \"\",\r\n    \"millisecondsBetweenCalls\": 1000\r\n}",
+    "project": "Foundations",
+    "apiVersions": [
+        {
+            "type": "API Version",
+            "name": "Version 2",
+            "config": "{\r\n    \"codeName\": \"2\"\r\n}",
+            "project": "Foundations",
+            "apiEndpoints": [
+                {
+                    "type": "API Endpoint",
+                    "name": "tweets/search/recent",
+                    "config": "{\r\n    \"codeName\": \"tweets/search/recent\"\r\n}",
+                    "project": "Foundations",
+                    "apiQueryParameters": {
+                        "type": "API Query Parameters",
+                        "name": "New API Query Parameters",
+                        "project": "Foundations",
+                        "apiQueryParameters": [
+                            {
+                                "type": "API Query Parameter",
+                                "name": "query",
+                                "config": "{\r\n    \"codeName\": \"query\",\r\n    \"isString\": true,\r\n    \"isOptional\": false,\r\n    \"description\": \"\",\r\n    \"value\": \"(BTC OR Bitcoin) -is:retweet lang:en -has:links\"\r\n}",
+                                "project": "Foundations",
+                                "id": "61aaeb0e-a709-41b6-bd71-5dca7e413e03",
+                                "savedPayload": {
+                                    "position": {
+                                        "x": 13665,
+                                        "y": 31520.077136594
+                                    },
+                                    "targetPosition": {
+                                        "x": 13815,
+                                        "y": 31779.884757729335
+                                    },
+                                    "floatingObject": {
+                                        "isPinned": false,
+                                        "isFrozen": false,
+                                        "isCollapsed": false,
+                                        "angleToParent": 2,
+                                        "distanceToParent": 3,
+                                        "arrangementStyle": 0
+                                    },
+                                    "uiObject": {
+                                        "isRunning": false
+                                    }
+                                }
+                            },
+                            {
+                                "type": "API Query Parameter",
+                                "name": "tweet.fields",
+                                "config": "{\r\n    \"codeName\": \"tweet.fields\",\r\n    \"isString\": true,\r\n    \"isOptional\": false,\r\n    \"description\": \"\",\r\n    \"value\": \"created_at\"\r\n}",
+                                "project": "Foundations",
+                                "id": "365d4e29-0d62-4aff-97b6-6acb3b88e5da",
+                                "savedPayload": {
+                                    "position": {
+                                        "x": 13815,
+                                        "y": 31479.884757729335
+                                    },
+                                    "targetPosition": {
+                                        "x": 13815,
+                                        "y": 31779.884757729335
+                                    },
+                                    "floatingObject": {
+                                        "isPinned": false,
+                                        "isFrozen": false,
+                                        "isCollapsed": false,
+                                        "angleToParent": 2,
+                                        "distanceToParent": 3,
+                                        "arrangementStyle": 0
+                                    },
+                                    "uiObject": {
+                                        "isRunning": false
+                                    }
+                                }
+                            },
+                            {
+                                "type": "API Query Parameter",
+                                "name": "max_results",
+                                "config": "{\r\n    \"codeName\": \"max_results\",\r\n    \"isString\": false,\r\n    \"isOptional\": false,\r\n    \"description\": \"\",\r\n    \"value\": 100\r\n}",
+                                "project": "Foundations",
+                                "id": "188c7f59-1ad7-4728-b803-fe09f8370eae",
+                                "savedPayload": {
+                                    "position": {
+                                        "x": 13965,
+                                        "y": 31520.077136594
+                                    },
+                                    "targetPosition": {
+                                        "x": 13815,
+                                        "y": 31779.884757729335
+                                    },
+                                    "floatingObject": {
+                                        "isPinned": false,
+                                        "isFrozen": false,
+                                        "isCollapsed": false,
+                                        "angleToParent": 2,
+                                        "distanceToParent": 3,
+                                        "arrangementStyle": 0
+                                    },
+                                    "uiObject": {
+                                        "isRunning": false
+                                    }
+                                }
+                            },
+                            {
+                                "type": "API Query Parameter",
+                                "name": "start_time",
+                                "config": "{\r\n    \"codeName\": \"start_time\",\r\n    \"isString\": true,\r\n    \"isOptional\": false,\r\n    \"description\": \"\",\r\n    \"replaceBy\": \"@LastQueryRunISO1601\"\r\n}",
+                                "project": "Foundations",
+                                "id": "4f15ed20-9f24-4822-8750-a5cdc4094b9f",
+                                "savedPayload": {
+                                    "position": {
+                                        "x": 14074.807621135331,
+                                        "y": 31629.884757729335
+                                    },
+                                    "targetPosition": {
+                                        "x": 13815,
+                                        "y": 31779.884757729335
+                                    },
+                                    "floatingObject": {
+                                        "isPinned": false,
+                                        "isFrozen": false,
+                                        "isCollapsed": false,
+                                        "angleToParent": 2,
+                                        "distanceToParent": 3,
+                                        "arrangementStyle": 0
+                                    },
+                                    "uiObject": {
+                                        "isRunning": false
+                                    }
+                                }
+                            },
+                            {
+                                "type": "API Query Parameter",
+                                "name": "next_token",
+                                "config": "{\r\n    \"codeName\": \"next_token\",\r\n    \"isString\": true,\r\n    \"isOptional\": false,\r\n    \"isPageToken\": true,\r\n    \"description\": \"\"\r\n}",
+                                "project": "Foundations",
+                                "id": "ab8e8d4f-1cb0-4d51-80f3-bb0f6aca6894",
+                                "savedPayload": {
+                                    "position": {
+                                        "x": 14115,
+                                        "y": 31779.884757729335
+                                    },
+                                    "targetPosition": {
+                                        "x": 13815,
+                                        "y": 31779.884757729335
+                                    },
+                                    "floatingObject": {
+                                        "isPinned": false,
+                                        "isFrozen": false,
+                                        "isCollapsed": false,
+                                        "angleToParent": 2,
+                                        "distanceToParent": 3,
+                                        "arrangementStyle": 0
+                                    },
+                                    "uiObject": {
+                                        "isRunning": false
+                                    }
+                                }
+                            }
+                        ],
+                        "id": "05ed02dc-0f36-4018-98fa-b1b039c8b7d9",
+                        "savedPayload": {
+                            "position": {
+                                "x": 13815,
+                                "y": 31779.884757729335
+                            },
+                            "targetPosition": {
+                                "x": 13665,
+                                "y": 32039.692378864667
+                            },
+                            "floatingObject": {
+                                "isPinned": false,
+                                "isFrozen": false,
+                                "isCollapsed": false,
+                                "angleToParent": 1,
+                                "distanceToParent": 3,
+                                "arrangementStyle": 0
+                            },
+                            "uiObject": {
+                                "isRunning": false
+                            }
+                        }
+                    },
+                    "apiQueryResponses": {
+                        "type": "API Query Responses",
+                        "name": "New API Query Responses",
+                        "project": "Foundations",
+                        "apiQueryResponses": [
+                            {
+                                "type": "API Query Response",
+                                "name": "200 Success",
+                                "config": "{\r\n    \"codeName\": \"200\",\r\n    \"isError\": false\r\n}",
+                                "project": "Foundations",
+                                "apiResponseSchema": {
+                                    "type": "API Response Schema",
+                                    "name": "New API Response Schema",
+                                    "config": "{\r\n    \"nodePath\": \"apiResponseReceivedObject\"\r\n}",
+                                    "project": "Foundations",
+                                    "apiResponseFields": {
+                                        "type": "API Response Field",
+                                        "name": "Root Object",
+                                        "config": "{\r\n    \"codeName\": \"\",\r\n    \"fieldType\": \"object\",\r\n    \"description\": \"\"\r\n}",
+                                        "project": "Foundations",
+                                        "apiResponseFields": [
+                                            {
+                                                "type": "API Response Field",
+                                                "name": "meta",
+                                                "config": "{\r\n    \"codeName\": \"meta\",\r\n    \"fieldType\": \"object\",\r\n    \"description\": \"\"\r\n}",
+                                                "project": "Foundations",
+                                                "apiResponseFields": [
+                                                    {
+                                                        "type": "API Response Field",
+                                                        "name": "newest_id",
+                                                        "config": "{\r\n    \"codeName\": \"newest_id\",\r\n    \"fieldType\": \"number\",\r\n    \"description\": \"\"\r\n}",
+                                                        "project": "Foundations",
+                                                        "apiResponseFields": [],
+                                                        "id": "53dd4f4b-5f13-4b1a-bcdc-64e22e6083c9",
+                                                        "savedPayload": {
+                                                            "position": {
+                                                                "x": 15070.758439093735,
+                                                                "y": 32506.794901687517
+                                                            },
+                                                            "targetPosition": {
+                                                                "x": 14894.422863405993,
+                                                                "y": 32749.5
+                                                            },
+                                                            "floatingObject": {
+                                                                "isPinned": false,
+                                                                "isFrozen": false,
+                                                                "isCollapsed": false,
+                                                                "angleToParent": 2,
+                                                                "distanceToParent": 3,
+                                                                "arrangementStyle": 0
+                                                            },
+                                                            "uiObject": {
+                                                                "isRunning": false
+                                                            }
+                                                        }
+                                                    },
+                                                    {
+                                                        "type": "API Response Field",
+                                                        "name": "oldest_id",
+                                                        "config": "{\r\n    \"codeName\": \"oldest_id\",\r\n    \"fieldType\": \"number\",\r\n    \"description\": \"\"\r\n}",
+                                                        "project": "Foundations",
+                                                        "apiResponseFields": [],
+                                                        "id": "da20e2cf-30a5-4792-b787-b56b3d0dfd86",
+                                                        "savedPayload": {
+                                                            "position": {
+                                                                "x": 15179.739818294538,
+                                                                "y": 32656.794901687517
+                                                            },
+                                                            "targetPosition": {
+                                                                "x": 14894.422863405993,
+                                                                "y": 32749.5
+                                                            },
+                                                            "floatingObject": {
+                                                                "isPinned": false,
+                                                                "isFrozen": false,
+                                                                "isCollapsed": false,
+                                                                "angleToParent": 2,
+                                                                "distanceToParent": 3,
+                                                                "arrangementStyle": 0
+                                                            },
+                                                            "uiObject": {
+                                                                "isRunning": false
+                                                            }
+                                                        }
+                                                    },
+                                                    {
+                                                        "type": "API Response Field",
+                                                        "name": "result_count",
+                                                        "config": "{\r\n    \"codeName\": \"result_count\",\r\n    \"fieldType\": \"number\",\r\n    \"description\": \"\"\r\n}",
+                                                        "project": "Foundations",
+                                                        "apiResponseFields": [],
+                                                        "id": "23bc03d4-675b-4e8a-bce2-fc7a88235e67",
+                                                        "savedPayload": {
+                                                            "position": {
+                                                                "x": 15179.739818294538,
+                                                                "y": 32842.20509831249
+                                                            },
+                                                            "targetPosition": {
+                                                                "x": 14894.422863405993,
+                                                                "y": 32749.5
+                                                            },
+                                                            "floatingObject": {
+                                                                "isPinned": false,
+                                                                "isFrozen": false,
+                                                                "isCollapsed": false,
+                                                                "angleToParent": 2,
+                                                                "distanceToParent": 3,
+                                                                "arrangementStyle": 0
+                                                            },
+                                                            "uiObject": {
+                                                                "isRunning": false
+                                                            }
+                                                        }
+                                                    },
+                                                    {
+                                                        "type": "API Response Field",
+                                                        "name": "next_token",
+                                                        "config": "{\r\n    \"codeName\": \"next_token\",\r\n    \"fieldType\": \"string\",\r\n    \"description\": \"\",\r\n    \"isPageToken\": true\r\n}",
+                                                        "project": "Foundations",
+                                                        "apiResponseFields": [],
+                                                        "id": "b50b4d02-91a3-4e19-82ba-734b5e234fee",
+                                                        "savedPayload": {
+                                                            "position": {
+                                                                "x": 15070.758439093735,
+                                                                "y": 32992.20509831249
+                                                            },
+                                                            "targetPosition": {
+                                                                "x": 14894.422863405993,
+                                                                "y": 32749.5
+                                                            },
+                                                            "floatingObject": {
+                                                                "isPinned": false,
+                                                                "isFrozen": false,
+                                                                "isCollapsed": false,
+                                                                "angleToParent": 2,
+                                                                "distanceToParent": 3,
+                                                                "arrangementStyle": 0
+                                                            },
+                                                            "uiObject": {
+                                                                "isRunning": false
+                                                            }
+                                                        }
+                                                    }
+                                                ],
+                                                "id": "1d2df51d-cf8e-4743-abac-4e418d1c543b",
+                                                "savedPayload": {
+                                                    "position": {
+                                                        "x": 14894.422863405993,
+                                                        "y": 32749.5
+                                                    },
+                                                    "targetPosition": {
+                                                        "x": 14594.422863405993,
+                                                        "y": 32749.5
+                                                    },
+                                                    "floatingObject": {
+                                                        "isPinned": false,
+                                                        "isFrozen": false,
+                                                        "isCollapsed": false,
+                                                        "angleToParent": 2,
+                                                        "distanceToParent": 3,
+                                                        "arrangementStyle": 0
+                                                    },
+                                                    "uiObject": {
+                                                        "isRunning": false
+                                                    }
+                                                }
+                                            },
+                                            {
+                                                "type": "API Response Field",
+                                                "name": "data",
+                                                "config": "{\r\n    \"codeName\": \"data\",\r\n    \"fieldType\": \"array\",\r\n    \"description\": \"\"\r\n}",
+                                                "project": "Foundations",
+                                                "apiResponseFields": [
+                                                    {
+                                                        "type": "API Response Field",
+                                                        "name": "id ",
+                                                        "config": "{\r\n    \"codeName\": \"id\",\r\n    \"fieldType\": \"number\",\r\n    \"description\": \"\"\r\n}",
+                                                        "project": "Foundations",
+                                                        "apiResponseFields": [],
+                                                        "id": "2f5f5996-73b2-4359-8c27-d40069899a28",
+                                                        "savedPayload": {
+                                                            "position": {
+                                                                "x": 15034.200611292714,
+                                                                "y": 33086.95333466609
+                                                            },
+                                                            "targetPosition": {
+                                                                "x": 14744.422863405993,
+                                                                "y": 33009.30762113533
+                                                            },
+                                                            "floatingObject": {
+                                                                "isPinned": false,
+                                                                "isFrozen": false,
+                                                                "isCollapsed": false,
+                                                                "angleToParent": 2,
+                                                                "distanceToParent": 3,
+                                                                "arrangementStyle": 0
+                                                            },
+                                                            "uiObject": {
+                                                                "isRunning": false
+                                                            }
+                                                        }
+                                                    },
+                                                    {
+                                                        "type": "API Response Field",
+                                                        "name": "text",
+                                                        "config": "{\r\n    \"codeName\": \"text\",\r\n    \"fieldType\": \"string\",\r\n    \"description\": \"\"\r\n}",
+                                                        "project": "Foundations",
+                                                        "apiResponseFields": [],
+                                                        "id": "388aa767-7f6c-4a2d-9397-e6f827f2ccef",
+                                                        "savedPayload": {
+                                                            "position": {
+                                                                "x": 14894.422863405993,
+                                                                "y": 33269.115242270665
+                                                            },
+                                                            "targetPosition": {
+                                                                "x": 14744.422863405993,
+                                                                "y": 33009.30762113533
+                                                            },
+                                                            "floatingObject": {
+                                                                "isPinned": false,
+                                                                "isFrozen": false,
+                                                                "isCollapsed": false,
+                                                                "angleToParent": 2,
+                                                                "distanceToParent": 3,
+                                                                "arrangementStyle": 0
+                                                            },
+                                                            "uiObject": {
+                                                                "isRunning": false
+                                                            }
+                                                        }
+                                                    },
+                                                    {
+                                                        "type": "API Response Field",
+                                                        "name": "created_at",
+                                                        "config": "{\r\n    \"codeName\": \"created_at\",\r\n    \"fieldType\": \"string\",\r\n    \"description\": \"\"\r\n}",
+                                                        "project": "Foundations",
+                                                        "apiResponseFields": [],
+                                                        "id": "d4639bb4-2778-4907-bf0d-2d8bdc6ef59f",
+                                                        "savedPayload": {
+                                                            "position": {
+                                                                "x": 14666.777149875237,
+                                                                "y": 33299.085369022054
+                                                            },
+                                                            "targetPosition": {
+                                                                "x": 14744.422863405993,
+                                                                "y": 33009.30762113533
+                                                            },
+                                                            "floatingObject": {
+                                                                "isPinned": false,
+                                                                "isFrozen": false,
+                                                                "isCollapsed": false,
+                                                                "angleToParent": 2,
+                                                                "distanceToParent": 3,
+                                                                "arrangementStyle": 0
+                                                            },
+                                                            "uiObject": {
+                                                                "isRunning": false
+                                                            }
+                                                        }
+                                                    }
+                                                ],
+                                                "id": "28494ec9-1b0c-44d6-a127-6b991b906a46",
+                                                "savedPayload": {
+                                                    "position": {
+                                                        "x": 14744.422863405993,
+                                                        "y": 33009.30762113533
+                                                    },
+                                                    "targetPosition": {
+                                                        "x": 14594.422863405993,
+                                                        "y": 32749.5
+                                                    },
+                                                    "floatingObject": {
+                                                        "isPinned": false,
+                                                        "isFrozen": false,
+                                                        "isCollapsed": false,
+                                                        "angleToParent": 2,
+                                                        "distanceToParent": 3,
+                                                        "arrangementStyle": 0
+                                                    },
+                                                    "uiObject": {
+                                                        "isRunning": false
+                                                    }
+                                                }
+                                            }
+                                        ],
+                                        "id": "7fa5d994-e4cf-412f-bdd1-ae0c1a3e960d",
+                                        "savedPayload": {
+                                            "position": {
+                                                "x": 14594.422863405993,
+                                                "y": 32749.5
+                                            },
+                                            "targetPosition": {
+                                                "x": 14334.615242270662,
+                                                "y": 32599.5
+                                            },
+                                            "floatingObject": {
+                                                "isPinned": false,
+                                                "isFrozen": false,
+                                                "isCollapsed": false,
+                                                "angleToParent": 1,
+                                                "distanceToParent": 3,
+                                                "arrangementStyle": 0
+                                            },
+                                            "uiObject": {
+                                                "isRunning": false
+                                            }
+                                        }
+                                    },
+                                    "id": "4a37636e-593c-47b2-9b84-c6fb7f01dc68",
+                                    "savedPayload": {
+                                        "position": {
+                                            "x": 14334.615242270662,
+                                            "y": 32599.5
+                                        },
+                                        "targetPosition": {
+                                            "x": 14074.807621135331,
+                                            "y": 32449.5
+                                        },
+                                        "floatingObject": {
+                                            "isPinned": false,
+                                            "isFrozen": false,
+                                            "isCollapsed": false,
+                                            "angleToParent": 1,
+                                            "distanceToParent": 3,
+                                            "arrangementStyle": 0
+                                        },
+                                        "uiObject": {
+                                            "isRunning": false
+                                        }
+                                    }
+                                },
+                                "id": "ca4e6ff9-0d50-4bf2-930a-346812ba1593",
+                                "savedPayload": {
+                                    "position": {
+                                        "x": 14074.807621135331,
+                                        "y": 32449.5
+                                    },
+                                    "targetPosition": {
+                                        "x": 13815,
+                                        "y": 32299.5
+                                    },
+                                    "floatingObject": {
+                                        "isPinned": false,
+                                        "isFrozen": false,
+                                        "isCollapsed": false,
+                                        "angleToParent": 2,
+                                        "distanceToParent": 3,
+                                        "arrangementStyle": 0
+                                    },
+                                    "uiObject": {
+                                        "isRunning": false
+                                    }
+                                }
+                            },
+                            {
+                                "type": "API Query Response",
+                                "name": "400 Bad Request",
+                                "config": "{\r\n    \"codeName\": \"400\",\r\n    \"isError\": true\r\n}",
+                                "project": "Foundations",
+                                "apiResponseSchema": {
+                                    "type": "API Response Schema",
+                                    "name": "New API Response Schema",
+                                    "config": "{\"nodePath\": \"apiResponseReceivedObject.data\"}",
+                                    "project": "Foundations",
+                                    "id": "74fc55b4-a352-4a13-b222-ad1950b08490",
+                                    "savedPayload": {
+                                        "position": {
+                                            "x": 13815,
+                                            "y": 32899.5
+                                        },
+                                        "targetPosition": {
+                                            "x": 13815,
+                                            "y": 32599.5
+                                        },
+                                        "floatingObject": {
+                                            "isPinned": false,
+                                            "isFrozen": false,
+                                            "isCollapsed": false,
+                                            "angleToParent": 1,
+                                            "distanceToParent": 3,
+                                            "arrangementStyle": 0
+                                        },
+                                        "uiObject": {
+                                            "isRunning": false
+                                        }
+                                    }
+                                },
+                                "id": "361f728b-5250-47f9-a7d5-6cac1e3460bf",
+                                "savedPayload": {
+                                    "position": {
+                                        "x": 13815,
+                                        "y": 32599.5
+                                    },
+                                    "targetPosition": {
+                                        "x": 13815,
+                                        "y": 32299.5
+                                    },
+                                    "floatingObject": {
+                                        "isPinned": false,
+                                        "isFrozen": false,
+                                        "isCollapsed": false,
+                                        "angleToParent": 2,
+                                        "distanceToParent": 3,
+                                        "arrangementStyle": 0
+                                    },
+                                    "uiObject": {
+                                        "isRunning": false
+                                    }
+                                }
+                            }
+                        ],
+                        "id": "56652eb5-6d47-4a5e-a8d8-41954fe5926f",
+                        "savedPayload": {
+                            "position": {
+                                "x": 13815,
+                                "y": 32299.5
+                            },
+                            "targetPosition": {
+                                "x": 13665,
+                                "y": 32039.692378864667
+                            },
+                            "floatingObject": {
+                                "isPinned": false,
+                                "isFrozen": false,
+                                "isCollapsed": false,
+                                "angleToParent": 1,
+                                "distanceToParent": 3,
+                                "arrangementStyle": 0
+                            },
+                            "uiObject": {
+                                "isRunning": false
+                            }
+                        }
+                    },
+                    "id": "3f31120b-99c0-4a56-bba8-2fd7a6fd813e",
+                    "savedPayload": {
+                        "position": {
+                            "x": 13665,
+                            "y": 32039.692378864667
+                        },
+                        "targetPosition": {
+                            "x": 13365,
+                            "y": 32039.692378864667
+                        },
+                        "floatingObject": {
+                            "isPinned": false,
+                            "isFrozen": false,
+                            "isCollapsed": false,
+                            "angleToParent": 1,
+                            "distanceToParent": 3,
+                            "arrangementStyle": 0
+                        },
+                        "uiObject": {
+                            "isRunning": false
+                        }
+                    }
+                }
+            ],
+            "id": "ed073877-4ba7-437f-8285-129f32d4b1ac",
+            "savedPayload": {
+                "position": {
+                    "x": 13365,
+                    "y": 32039.692378864667
+                },
+                "targetPosition": {
+                    "x": 13065,
+                    "y": 32039.692378864667
+                },
+                "floatingObject": {
+                    "isPinned": false,
+                    "isFrozen": false,
+                    "isCollapsed": false,
+                    "angleToParent": 1,
+                    "distanceToParent": 3,
+                    "arrangementStyle": 0
+                },
+                "uiObject": {
+                    "isRunning": false
+                }
+            }
+        }
+    ],
+    "id": "484378a0-741a-465a-b3cc-e50488bd50c2",
+    "savedPayload": {
+        "position": {
+            "x": 13065,
+            "y": 32039.692378864667
+        },
+        "targetPosition": {
+            "x": 13065,
+            "y": 32039.692378864667
+        },
+        "floatingObject": {
+            "isPinned": false,
+            "isFrozen": false,
+            "isCollapsed": true,
+            "angleToParent": 1,
+            "distanceToParent": 3,
+            "arrangementStyle": 0
+        },
+        "uiObject": {
+            "isRunning": false
+        }
+    }
+}
