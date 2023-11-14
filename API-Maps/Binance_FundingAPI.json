@@ -1,0 +1,1486 @@
+{
+    "type": "API Map",
+    "name": "Binance_API",
+    "config": "{\r\n    \"codeName\": \"Binance_API\",\r\n    \"protocol\": \"https\",\r\n    \"hostName\": \"fapi.binance.com\",\r\n    \"portNumber\": \"\",\r\n    \"path\": \"fapi\",\r\n    \"millisecondsBetweenCalls\": 4000\r\n}",
+    "project": "Foundations",
+    "apiVersions": [
+        {
+            "type": "API Version",
+            "name": "Version 1",
+            "config": "{\r\n    \"codeName\": \"v1\"\r\n}",
+            "project": "Foundations",
+            "apiEndpoints": [
+                {
+                    "type": "API Endpoint",
+                    "name": "FundingRate",
+                    "config": "{\r\n    \"codeName\": \"fundingRate\"\r\n}",
+                    "project": "Foundations",
+                    "apiQueryParameters": {
+                        "type": "API Query Parameters",
+                        "name": "New API Query Parameters",
+                        "project": "Foundations",
+                        "apiQueryParameters": [
+                            {
+                                "type": "API Query Parameter",
+                                "name": "Symbol",
+                                "config": "{\r\n    \"codeName\": \"symbol\",\r\n    \"isString\": true,\r\n    \"isOptional\": false,\r\n    \"value\": \"BTCUSDT\",\r\n    \"description\": \"Replace (value) above with desired market pair, this must be done by hand for now.\"\r\n}",
+                                "project": "Foundations",
+                                "id": "3273a31b-e022-4b09-b254-c1d4cb699f7b",
+                                "savedPayload": {
+                                    "position": {
+                                        "x": 11816.830353151543,
+                                        "y": 39246.62172277238
+                                    },
+                                    "targetPosition": {
+                                        "x": 11816.830353151543,
+                                        "y": 39546.62172277238
+                                    },
+                                    "floatingObject": {
+                                        "isPinned": false,
+                                        "isFrozen": false,
+                                        "isCollapsed": false,
+                                        "angleToParent": 2,
+                                        "distanceToParent": 3,
+                                        "arrangementStyle": 0
+                                    },
+                                    "uiObject": {
+                                        "isRunning": false
+                                    },
+                                    "parentNode": {
+                                        "type": "API Query Parameters",
+                                        "name": "New API Query Parameters",
+                                        "id": "5b908819-58ba-463a-abe7-2a8f06b3fe92"
+                                    },
+                                    "chainParent": {
+                                        "type": "API Query Parameters",
+                                        "name": "New API Query Parameters",
+                                        "id": "5b908819-58ba-463a-abe7-2a8f06b3fe92"
+                                    }
+                                }
+                            },
+                            {
+                                "type": "API Query Parameter",
+                                "name": "Limit",
+                                "config": "{\r\n    \"codeName\": \"limit\",\r\n    \"isString\": true,\r\n    \"isOptional\": false,\r\n    \"value\": \"6\",\r\n    \"description\": \"You will receive 6 timestamps worth of data.\"\r\n}",
+                                "project": "Foundations",
+                                "id": "86121681-3dce-4e4f-9e48-f27cee593b40",
+                                "savedPayload": {
+                                    "position": {
+                                        "x": 12076.637974286874,
+                                        "y": 39396.62172277238
+                                    },
+                                    "targetPosition": {
+                                        "x": 11816.830353151543,
+                                        "y": 39546.62172277238
+                                    },
+                                    "floatingObject": {
+                                        "isPinned": false,
+                                        "isFrozen": false,
+                                        "isCollapsed": false,
+                                        "angleToParent": 2,
+                                        "distanceToParent": 3,
+                                        "arrangementStyle": 0
+                                    },
+                                    "uiObject": {
+                                        "isRunning": false
+                                    },
+                                    "parentNode": {
+                                        "type": "API Query Parameters",
+                                        "name": "New API Query Parameters",
+                                        "id": "5b908819-58ba-463a-abe7-2a8f06b3fe92"
+                                    },
+                                    "chainParent": {
+                                        "type": "API Query Parameters",
+                                        "name": "New API Query Parameters",
+                                        "id": "5b908819-58ba-463a-abe7-2a8f06b3fe92"
+                                    }
+                                }
+                            }
+                        ],
+                        "id": "5871e8cd-31ff-400d-bf61-0487d69aa4f9",
+                        "savedPayload": {
+                            "position": {
+                                "x": 11816.830353151543,
+                                "y": 39546.62172277238
+                            },
+                            "targetPosition": {
+                                "x": 11666.830353151543,
+                                "y": 39806.429343907716
+                            },
+                            "floatingObject": {
+                                "isPinned": false,
+                                "isFrozen": false,
+                                "isCollapsed": false,
+                                "angleToParent": 1,
+                                "distanceToParent": 3,
+                                "arrangementStyle": 0
+                            },
+                            "uiObject": {
+                                "isRunning": false
+                            },
+                            "parentNode": {
+                                "type": "API Endpoint",
+                                "name": "FundingRate",
+                                "id": "ba43d95e-f445-41da-a1a3-d8f6cccfef64"
+                            },
+                            "chainParent": {
+                                "type": "API Endpoint",
+                                "name": "FundingRate",
+                                "id": "ba43d95e-f445-41da-a1a3-d8f6cccfef64"
+                            }
+                        }
+                    },
+                    "apiQueryResponses": {
+                        "type": "API Query Responses",
+                        "name": "New API Query Responses",
+                        "project": "Foundations",
+                        "apiQueryResponses": [
+                            {
+                                "type": "API Query Response",
+                                "name": "200 Success",
+                                "config": "{\r\n    \"codeName\": \"200\",\r\n    \"isError\": false\r\n}",
+                                "project": "Foundations",
+                                "apiResponseSchema": {
+                                    "type": "API Response Schema",
+                                    "name": "New API Response Schema",
+                                    "config": "{\r\n    \"nodePath\": \"apiResponseReceivedObject\"\r\n}",
+                                    "project": "Foundations",
+                                    "apiResponseFields": {
+                                        "type": "API Response Field",
+                                        "name": "rootObject",
+                                        "config": "{\r\n    \"codeName\": \"rootObject\",\r\n    \"fieldType\": \"array\",\r\n    \"descrption\": \"\"\r\n}",
+                                        "project": "Foundations",
+                                        "apiResponseFields": [
+                                            {
+                                                "type": "API Response Field",
+                                                "name": "Object-1",
+                                                "config": "{\r\n    \"codeName\": \"[0]\",\r\n    \"fieldType\": \"object\",\r\n    \"descrption\": \"This is the first .json in the response array.\"\r\n}",
+                                                "project": "Foundations",
+                                                "apiResponseFields": [
+                                                    {
+                                                        "type": "API Response Field",
+                                                        "name": "fundingRate_1",
+                                                        "config": "{\r\n    \"codeName\": \"fundingRate\",\r\n    \"fieldType\": \"string\",\r\n    \"descrption\": \"This is the Funding Rate.\"\r\n}",
+                                                        "project": "Foundations",
+                                                        "apiResponseFields": [],
+                                                        "id": "f1af949a-6c8f-431c-a170-91b164707eb2",
+                                                        "savedPayload": {
+                                                            "position": {
+                                                                "x": 12250.521288000662,
+                                                                "y": 39722.08521299272
+                                                            },
+                                                            "targetPosition": {
+                                                                "x": 12529.783412593923,
+                                                                "y": 39831.68752030264
+                                                            },
+                                                            "floatingObject": {
+                                                                "isPinned": false,
+                                                                "isFrozen": false,
+                                                                "isCollapsed": false,
+                                                                "angleToParent": 2,
+                                                                "distanceToParent": 3,
+                                                                "arrangementStyle": 0
+                                                            },
+                                                            "uiObject": {
+                                                                "isRunning": false
+                                                            },
+                                                            "parentNode": {
+                                                                "type": "API Response Field",
+                                                                "name": "Object-1",
+                                                                "id": "26a46726-135b-46a4-b0a9-62f52640d3c5"
+                                                            },
+                                                            "chainParent": {
+                                                                "type": "API Response Field",
+                                                                "name": "Object-1",
+                                                                "id": "26a46726-135b-46a4-b0a9-62f52640d3c5"
+                                                            },
+                                                            "referenceChildren": [
+                                                                {
+                                                                    "type": "API Response Field Reference",
+                                                                    "name": "fundingRate_1",
+                                                                    "id": "8d1dd983-9dac-496e-99ff-0e180326a099"
+                                                                }
+                                                            ]
+                                                        }
+                                                    },
+                                                    {
+                                                        "type": "API Response Field",
+                                                        "name": "fundingTime_1",
+                                                        "config": "{\r\n    \"codeName\": \"fundingTime\",\r\n    \"fieldType\": \"number\",\r\n    \"descrption\": \"This is the timestamp of the paired funding rate.\"\r\n}",
+                                                        "project": "Foundations",
+                                                        "apiResponseFields": [],
+                                                        "id": "aa9540d3-d772-43ab-97d6-28379d42d84d",
+                                                        "savedPayload": {
+                                                            "position": {
+                                                                "x": 12485.070732741071,
+                                                                "y": 39535.03827243511
+                                                            },
+                                                            "targetPosition": {
+                                                                "x": 12529.783412593923,
+                                                                "y": 39831.68752030264
+                                                            },
+                                                            "floatingObject": {
+                                                                "isPinned": false,
+                                                                "isFrozen": false,
+                                                                "isCollapsed": false,
+                                                                "angleToParent": 2,
+                                                                "distanceToParent": 3,
+                                                                "arrangementStyle": 0
+                                                            },
+                                                            "uiObject": {
+                                                                "isRunning": false
+                                                            },
+                                                            "parentNode": {
+                                                                "type": "API Response Field",
+                                                                "name": "Object-1",
+                                                                "id": "26a46726-135b-46a4-b0a9-62f52640d3c5"
+                                                            },
+                                                            "chainParent": {
+                                                                "type": "API Response Field",
+                                                                "name": "Object-1",
+                                                                "id": "26a46726-135b-46a4-b0a9-62f52640d3c5"
+                                                            },
+                                                            "referenceChildren": [
+                                                                {
+                                                                    "type": "API Response Field Reference",
+                                                                    "name": "fundingTime_1",
+                                                                    "id": "7a67eabb-501c-4331-8668-ae6e31eee24f"
+                                                                }
+                                                            ]
+                                                        }
+                                                    }
+                                                ],
+                                                "id": "b06041a9-1ea9-48ce-bac5-be985372c472",
+                                                "savedPayload": {
+                                                    "position": {
+                                                        "x": 12529.783412593923,
+                                                        "y": 39831.68752030264
+                                                    },
+                                                    "targetPosition": {
+                                                        "x": 12716.830353151543,
+                                                        "y": 40066.23696504305
+                                                    },
+                                                    "floatingObject": {
+                                                        "isPinned": false,
+                                                        "isFrozen": false,
+                                                        "isCollapsed": true,
+                                                        "angleToParent": 1,
+                                                        "distanceToParent": 3,
+                                                        "arrangementStyle": 0
+                                                    },
+                                                    "uiObject": {
+                                                        "isRunning": false
+                                                    },
+                                                    "parentNode": {
+                                                        "type": "API Response Field",
+                                                        "name": "rootObject",
+                                                        "id": "807b02b5-7bf6-4d6b-8ea3-d397c75eff5b"
+                                                    },
+                                                    "chainParent": {
+                                                        "type": "API Response Field",
+                                                        "name": "rootObject",
+                                                        "id": "807b02b5-7bf6-4d6b-8ea3-d397c75eff5b"
+                                                    }
+                                                }
+                                            },
+                                            {
+                                                "type": "API Response Field",
+                                                "name": "Object-2",
+                                                "config": "{\r\n    \"codeName\": \"[1]\",\r\n    \"fieldType\": \"object\",\r\n    \"descrption\": \"This is the second .json in the response array.\"\r\n}",
+                                                "project": "Foundations",
+                                                "apiResponseFields": [
+                                                    {
+                                                        "type": "API Response Field",
+                                                        "name": "fundingRate_2",
+                                                        "config": "{\r\n    \"codeName\": \"fundingRate\",\r\n    \"fieldType\": \"string\",\r\n    \"descrption\": \"This is the Funding Rate.\"\r\n}",
+                                                        "project": "Foundations",
+                                                        "apiResponseFields": [],
+                                                        "id": "b5346c5c-3262-4361-b216-a3f4bf5c36b9",
+                                                        "savedPayload": {
+                                                            "position": {
+                                                                "x": 12695.160081015167,
+                                                                "y": 39487.086749652655
+                                                            },
+                                                            "targetPosition": {
+                                                                "x": 12783.586633338438,
+                                                                "y": 39773.7585913885
+                                                            },
+                                                            "floatingObject": {
+                                                                "isPinned": false,
+                                                                "isFrozen": false,
+                                                                "isCollapsed": false,
+                                                                "angleToParent": 2,
+                                                                "distanceToParent": 3,
+                                                                "arrangementStyle": 0
+                                                            },
+                                                            "uiObject": {
+                                                                "isRunning": false
+                                                            },
+                                                            "parentNode": {
+                                                                "type": "API Response Field",
+                                                                "name": "Object-2",
+                                                                "id": "dc5b2093-1146-483e-95e0-98059d9413da"
+                                                            },
+                                                            "chainParent": {
+                                                                "type": "API Response Field",
+                                                                "name": "Object-2",
+                                                                "id": "dc5b2093-1146-483e-95e0-98059d9413da"
+                                                            },
+                                                            "referenceChildren": [
+                                                                {
+                                                                    "type": "API Response Field Reference",
+                                                                    "name": "fundingRate_2",
+                                                                    "id": "962b2c08-a15e-48e8-8ec8-38be617e234a"
+                                                                }
+                                                            ]
+                                                        }
+                                                    },
+                                                    {
+                                                        "type": "API Response Field",
+                                                        "name": "fundingTime_2",
+                                                        "config": "{\r\n    \"codeName\": \"fundingTime\",\r\n    \"fieldType\": \"number\",\r\n    \"descrption\": \"This is the timestamp of the paired funding rate.\"\r\n}",
+                                                        "project": "Foundations",
+                                                        "apiResponseFields": [],
+                                                        "id": "a08df66f-0f5b-4ea0-a0b0-020c3612b773",
+                                                        "savedPayload": {
+                                                            "position": {
+                                                                "x": 12987.638454669714,
+                                                                "y": 39553.84302983955
+                                                            },
+                                                            "targetPosition": {
+                                                                "x": 12783.586633338438,
+                                                                "y": 39773.7585913885
+                                                            },
+                                                            "floatingObject": {
+                                                                "isPinned": false,
+                                                                "isFrozen": false,
+                                                                "isCollapsed": false,
+                                                                "angleToParent": 2,
+                                                                "distanceToParent": 3,
+                                                                "arrangementStyle": 0
+                                                            },
+                                                            "uiObject": {
+                                                                "isRunning": false
+                                                            },
+                                                            "parentNode": {
+                                                                "type": "API Response Field",
+                                                                "name": "Object-2",
+                                                                "id": "dc5b2093-1146-483e-95e0-98059d9413da"
+                                                            },
+                                                            "chainParent": {
+                                                                "type": "API Response Field",
+                                                                "name": "Object-2",
+                                                                "id": "dc5b2093-1146-483e-95e0-98059d9413da"
+                                                            },
+                                                            "referenceChildren": [
+                                                                {
+                                                                    "type": "API Response Field Reference",
+                                                                    "name": "fundingTime_2",
+                                                                    "id": "b2fbe553-b666-4e7e-ad52-6f0ccc117e41"
+                                                                }
+                                                            ]
+                                                        }
+                                                    }
+                                                ],
+                                                "id": "4701b3e6-8329-40d8-8669-6d98c6de310a",
+                                                "savedPayload": {
+                                                    "position": {
+                                                        "x": 12783.586633338438,
+                                                        "y": 39773.7585913885
+                                                    },
+                                                    "targetPosition": {
+                                                        "x": 12716.830353151543,
+                                                        "y": 40066.23696504305
+                                                    },
+                                                    "floatingObject": {
+                                                        "isPinned": false,
+                                                        "isFrozen": false,
+                                                        "isCollapsed": true,
+                                                        "angleToParent": 1,
+                                                        "distanceToParent": 3,
+                                                        "arrangementStyle": 0
+                                                    },
+                                                    "uiObject": {
+                                                        "isRunning": false
+                                                    },
+                                                    "parentNode": {
+                                                        "type": "API Response Field",
+                                                        "name": "rootObject",
+                                                        "id": "807b02b5-7bf6-4d6b-8ea3-d397c75eff5b"
+                                                    },
+                                                    "chainParent": {
+                                                        "type": "API Response Field",
+                                                        "name": "rootObject",
+                                                        "id": "807b02b5-7bf6-4d6b-8ea3-d397c75eff5b"
+                                                    }
+                                                }
+                                            },
+                                            {
+                                                "type": "API Response Field",
+                                                "name": "Object-3",
+                                                "config": "{\r\n    \"codeName\": \"[2]\",\r\n    \"fieldType\": \"object\",\r\n    \"descrption\": \"This is the third .json in the response array.\"\r\n}",
+                                                "project": "Foundations",
+                                                "apiResponseFields": [
+                                                    {
+                                                        "type": "API Response Field",
+                                                        "name": "fundingRate_3",
+                                                        "config": "{\r\n    \"codeName\": \"fundingRate\",\r\n    \"fieldType\": \"string\",\r\n    \"descrption\": \"This is the Funding Rate.\"\r\n}",
+                                                        "project": "Foundations",
+                                                        "apiResponseFields": [],
+                                                        "id": "ee08bfc2-2578-4abd-b96c-f198eebc81ea",
+                                                        "savedPayload": {
+                                                            "position": {
+                                                                "x": 13156.117030941354,
+                                                                "y": 39688.200211012976
+                                                            },
+                                                            "targetPosition": {
+                                                                "x": 12987.121013522268,
+                                                                "y": 39936.07184330778
+                                                            },
+                                                            "floatingObject": {
+                                                                "isPinned": false,
+                                                                "isFrozen": false,
+                                                                "isCollapsed": false,
+                                                                "angleToParent": 2,
+                                                                "distanceToParent": 3,
+                                                                "arrangementStyle": 0
+                                                            },
+                                                            "uiObject": {
+                                                                "isRunning": false
+                                                            },
+                                                            "parentNode": {
+                                                                "type": "API Response Field",
+                                                                "name": "Object-3",
+                                                                "id": "72662d84-17b7-4161-b1d8-612dd4f1ee79"
+                                                            },
+                                                            "chainParent": {
+                                                                "type": "API Response Field",
+                                                                "name": "Object-3",
+                                                                "id": "72662d84-17b7-4161-b1d8-612dd4f1ee79"
+                                                            },
+                                                            "referenceChildren": [
+                                                                {
+                                                                    "type": "API Response Field Reference",
+                                                                    "name": "fundingRate_3",
+                                                                    "id": "c61d212a-93e2-45bc-9635-0c96292f4062"
+                                                                }
+                                                            ]
+                                                        }
+                                                    },
+                                                    {
+                                                        "type": "API Response Field",
+                                                        "name": "fundingTime_3",
+                                                        "config": "{\r\n    \"codeName\": \"fundingTime\",\r\n    \"fieldType\": \"number\",\r\n    \"descrption\": \"This is the timestamp of the paired funding rate.\"\r\n}",
+                                                        "project": "Foundations",
+                                                        "apiResponseFields": [],
+                                                        "id": "c23b9e37-2116-4ccf-952c-b98c649fb224",
+                                                        "savedPayload": {
+                                                            "position": {
+                                                                "x": 13286.282152676622,
+                                                                "y": 39958.49087138371
+                                                            },
+                                                            "targetPosition": {
+                                                                "x": 12987.121013522268,
+                                                                "y": 39936.07184330778
+                                                            },
+                                                            "floatingObject": {
+                                                                "isPinned": false,
+                                                                "isFrozen": false,
+                                                                "isCollapsed": false,
+                                                                "angleToParent": 2,
+                                                                "distanceToParent": 3,
+                                                                "arrangementStyle": 0
+                                                            },
+                                                            "uiObject": {
+                                                                "isRunning": false
+                                                            },
+                                                            "parentNode": {
+                                                                "type": "API Response Field",
+                                                                "name": "Object-3",
+                                                                "id": "72662d84-17b7-4161-b1d8-612dd4f1ee79"
+                                                            },
+                                                            "chainParent": {
+                                                                "type": "API Response Field",
+                                                                "name": "Object-3",
+                                                                "id": "72662d84-17b7-4161-b1d8-612dd4f1ee79"
+                                                            },
+                                                            "referenceChildren": [
+                                                                {
+                                                                    "type": "API Response Field Reference",
+                                                                    "name": "fundingTime_3",
+                                                                    "id": "40a8a917-41f0-444d-abb2-8c7de3c99cd9"
+                                                                }
+                                                            ]
+                                                        }
+                                                    }
+                                                ],
+                                                "id": "79c377a8-bddd-4c47-aa2b-1f67727cc2cc",
+                                                "savedPayload": {
+                                                    "position": {
+                                                        "x": 12987.121013522268,
+                                                        "y": 39936.07184330778
+                                                    },
+                                                    "targetPosition": {
+                                                        "x": 12716.830353151543,
+                                                        "y": 40066.23696504305
+                                                    },
+                                                    "floatingObject": {
+                                                        "isPinned": false,
+                                                        "isFrozen": false,
+                                                        "isCollapsed": true,
+                                                        "angleToParent": 1,
+                                                        "distanceToParent": 3,
+                                                        "arrangementStyle": 0
+                                                    },
+                                                    "uiObject": {
+                                                        "isRunning": false
+                                                    },
+                                                    "parentNode": {
+                                                        "type": "API Response Field",
+                                                        "name": "rootObject",
+                                                        "id": "807b02b5-7bf6-4d6b-8ea3-d397c75eff5b"
+                                                    },
+                                                    "chainParent": {
+                                                        "type": "API Response Field",
+                                                        "name": "rootObject",
+                                                        "id": "807b02b5-7bf6-4d6b-8ea3-d397c75eff5b"
+                                                    }
+                                                }
+                                            },
+                                            {
+                                                "type": "API Response Field",
+                                                "name": "Object-4",
+                                                "config": "{\r\n    \"codeName\": \"[3]\",\r\n    \"fieldType\": \"object\",\r\n    \"descrption\": \"This is the fourth .json in the response array.\"\r\n}",
+                                                "project": "Foundations",
+                                                "apiResponseFields": [
+                                                    {
+                                                        "type": "API Response Field",
+                                                        "name": "fundingRate_4",
+                                                        "config": "{\r\n    \"codeName\": \"fundingRate\",\r\n    \"fieldType\": \"string\",\r\n    \"descrption\": \"This is the Funding Rate.\"\r\n}",
+                                                        "project": "Foundations",
+                                                        "apiResponseFields": [],
+                                                        "id": "94cf50bf-a03c-4ab6-9c4d-e2ee62662f8c",
+                                                        "savedPayload": {
+                                                            "position": {
+                                                                "x": 13286.282152676622,
+                                                                "y": 40173.98305870239
+                                                            },
+                                                            "targetPosition": {
+                                                                "x": 12987.121013522268,
+                                                                "y": 40196.40208677832
+                                                            },
+                                                            "floatingObject": {
+                                                                "isPinned": false,
+                                                                "isFrozen": false,
+                                                                "isCollapsed": false,
+                                                                "angleToParent": 2,
+                                                                "distanceToParent": 3,
+                                                                "arrangementStyle": 0
+                                                            },
+                                                            "uiObject": {
+                                                                "isRunning": false
+                                                            },
+                                                            "parentNode": {
+                                                                "type": "API Response Field",
+                                                                "name": "Object-4",
+                                                                "id": "22bef133-5115-485a-b317-2cd32f3df600"
+                                                            },
+                                                            "chainParent": {
+                                                                "type": "API Response Field",
+                                                                "name": "Object-4",
+                                                                "id": "22bef133-5115-485a-b317-2cd32f3df600"
+                                                            },
+                                                            "referenceChildren": [
+                                                                {
+                                                                    "type": "API Response Field Reference",
+                                                                    "name": "fundingRate_4",
+                                                                    "id": "97d47129-e648-49d7-8abe-28ee41d0dfa8"
+                                                                }
+                                                            ]
+                                                        }
+                                                    },
+                                                    {
+                                                        "type": "API Response Field",
+                                                        "name": "fundingTime_4",
+                                                        "config": "{\r\n    \"codeName\": \"fundingTime\",\r\n    \"fieldType\": \"number\",\r\n    \"descrption\": \"This is the timestamp of the paired funding rate.\"\r\n}",
+                                                        "project": "Foundations",
+                                                        "apiResponseFields": [],
+                                                        "id": "9c9866ef-a52b-4384-b4d1-eb25af6ecafd",
+                                                        "savedPayload": {
+                                                            "position": {
+                                                                "x": 13156.117030941356,
+                                                                "y": 40444.27371907311
+                                                            },
+                                                            "targetPosition": {
+                                                                "x": 12987.121013522268,
+                                                                "y": 40196.40208677832
+                                                            },
+                                                            "floatingObject": {
+                                                                "isPinned": false,
+                                                                "isFrozen": false,
+                                                                "isCollapsed": false,
+                                                                "angleToParent": 2,
+                                                                "distanceToParent": 3,
+                                                                "arrangementStyle": 0
+                                                            },
+                                                            "uiObject": {
+                                                                "isRunning": false
+                                                            },
+                                                            "parentNode": {
+                                                                "type": "API Response Field",
+                                                                "name": "Object-4",
+                                                                "id": "22bef133-5115-485a-b317-2cd32f3df600"
+                                                            },
+                                                            "chainParent": {
+                                                                "type": "API Response Field",
+                                                                "name": "Object-4",
+                                                                "id": "22bef133-5115-485a-b317-2cd32f3df600"
+                                                            },
+                                                            "referenceChildren": [
+                                                                {
+                                                                    "type": "API Response Field Reference",
+                                                                    "name": "fundingTime_4",
+                                                                    "id": "62aae124-bb17-41a3-ad72-0139927d14ff"
+                                                                }
+                                                            ]
+                                                        }
+                                                    }
+                                                ],
+                                                "id": "c9056329-da0f-4613-8f73-f1612666bf5c",
+                                                "savedPayload": {
+                                                    "position": {
+                                                        "x": 12987.121013522268,
+                                                        "y": 40196.40208677832
+                                                    },
+                                                    "targetPosition": {
+                                                        "x": 12716.830353151543,
+                                                        "y": 40066.23696504305
+                                                    },
+                                                    "floatingObject": {
+                                                        "isPinned": false,
+                                                        "isFrozen": false,
+                                                        "isCollapsed": true,
+                                                        "angleToParent": 1,
+                                                        "distanceToParent": 3,
+                                                        "arrangementStyle": 0
+                                                    },
+                                                    "uiObject": {
+                                                        "isRunning": false
+                                                    },
+                                                    "parentNode": {
+                                                        "type": "API Response Field",
+                                                        "name": "rootObject",
+                                                        "id": "807b02b5-7bf6-4d6b-8ea3-d397c75eff5b"
+                                                    },
+                                                    "chainParent": {
+                                                        "type": "API Response Field",
+                                                        "name": "rootObject",
+                                                        "id": "807b02b5-7bf6-4d6b-8ea3-d397c75eff5b"
+                                                    }
+                                                }
+                                            },
+                                            {
+                                                "type": "API Response Field",
+                                                "name": "Object-5",
+                                                "config": "{\r\n    \"codeName\": \"[4]\",\r\n    \"fieldType\": \"object\",\r\n    \"descrption\": \"This is the fifth .json in the response array.\"\r\n}",
+                                                "project": "Foundations",
+                                                "apiResponseFields": [
+                                                    {
+                                                        "type": "API Response Field",
+                                                        "name": "fundingRate_5",
+                                                        "config": "{\r\n    \"codeName\": \"fundingRate\",\r\n    \"fieldType\": \"string\",\r\n    \"descrption\": \"This is the Funding Rate.\"\r\n}",
+                                                        "project": "Foundations",
+                                                        "apiResponseFields": [],
+                                                        "id": "bc580467-92d0-482c-9273-ba10478fb791",
+                                                        "savedPayload": {
+                                                            "position": {
+                                                                "x": 12987.638454669712,
+                                                                "y": 40578.63090024655
+                                                            },
+                                                            "targetPosition": {
+                                                                "x": 12783.586633338437,
+                                                                "y": 40358.7153386976
+                                                            },
+                                                            "floatingObject": {
+                                                                "isPinned": false,
+                                                                "isFrozen": false,
+                                                                "isCollapsed": false,
+                                                                "angleToParent": 2,
+                                                                "distanceToParent": 3,
+                                                                "arrangementStyle": 0
+                                                            },
+                                                            "uiObject": {
+                                                                "isRunning": false
+                                                            },
+                                                            "parentNode": {
+                                                                "type": "API Response Field",
+                                                                "name": "Object-5",
+                                                                "id": "ff8b5597-cf47-4ec2-8e2f-e5396eb81d5e"
+                                                            },
+                                                            "chainParent": {
+                                                                "type": "API Response Field",
+                                                                "name": "Object-5",
+                                                                "id": "ff8b5597-cf47-4ec2-8e2f-e5396eb81d5e"
+                                                            },
+                                                            "referenceChildren": [
+                                                                {
+                                                                    "type": "API Response Field Reference",
+                                                                    "name": "fundingRate_5",
+                                                                    "id": "41b1aeb5-906c-4890-9a81-05ab89a44944"
+                                                                }
+                                                            ]
+                                                        }
+                                                    },
+                                                    {
+                                                        "type": "API Response Field",
+                                                        "name": "fundingTime_5",
+                                                        "config": "{\r\n    \"codeName\": \"fundingTime\",\r\n    \"fieldType\": \"number\",\r\n    \"descrption\": \"This is the timestamp of the paired funding rate.\"\r\n}",
+                                                        "project": "Foundations",
+                                                        "apiResponseFields": [],
+                                                        "id": "5c8131dc-e4ee-4998-ab33-d5ef41d478b5",
+                                                        "savedPayload": {
+                                                            "position": {
+                                                                "x": 12695.160081015165,
+                                                                "y": 40645.38718043344
+                                                            },
+                                                            "targetPosition": {
+                                                                "x": 12783.586633338437,
+                                                                "y": 40358.7153386976
+                                                            },
+                                                            "floatingObject": {
+                                                                "isPinned": false,
+                                                                "isFrozen": false,
+                                                                "isCollapsed": false,
+                                                                "angleToParent": 2,
+                                                                "distanceToParent": 3,
+                                                                "arrangementStyle": 0
+                                                            },
+                                                            "uiObject": {
+                                                                "isRunning": false
+                                                            },
+                                                            "parentNode": {
+                                                                "type": "API Response Field",
+                                                                "name": "Object-5",
+                                                                "id": "ff8b5597-cf47-4ec2-8e2f-e5396eb81d5e"
+                                                            },
+                                                            "chainParent": {
+                                                                "type": "API Response Field",
+                                                                "name": "Object-5",
+                                                                "id": "ff8b5597-cf47-4ec2-8e2f-e5396eb81d5e"
+                                                            },
+                                                            "referenceChildren": [
+                                                                {
+                                                                    "type": "API Response Field Reference",
+                                                                    "name": "fundingTime_5",
+                                                                    "id": "4b26b4e4-cd25-46a5-86b8-9e9fe4a17a68"
+                                                                }
+                                                            ]
+                                                        }
+                                                    }
+                                                ],
+                                                "id": "c842d992-5c15-4e99-8fa2-f2fc25fd39ee",
+                                                "savedPayload": {
+                                                    "position": {
+                                                        "x": 12783.586633338437,
+                                                        "y": 40358.7153386976
+                                                    },
+                                                    "targetPosition": {
+                                                        "x": 12716.830353151543,
+                                                        "y": 40066.23696504305
+                                                    },
+                                                    "floatingObject": {
+                                                        "isPinned": false,
+                                                        "isFrozen": false,
+                                                        "isCollapsed": true,
+                                                        "angleToParent": 1,
+                                                        "distanceToParent": 3,
+                                                        "arrangementStyle": 0
+                                                    },
+                                                    "uiObject": {
+                                                        "isRunning": false
+                                                    },
+                                                    "parentNode": {
+                                                        "type": "API Response Field",
+                                                        "name": "rootObject",
+                                                        "id": "807b02b5-7bf6-4d6b-8ea3-d397c75eff5b"
+                                                    },
+                                                    "chainParent": {
+                                                        "type": "API Response Field",
+                                                        "name": "rootObject",
+                                                        "id": "807b02b5-7bf6-4d6b-8ea3-d397c75eff5b"
+                                                    }
+                                                }
+                                            },
+                                            {
+                                                "type": "API Response Field",
+                                                "name": "Object-6",
+                                                "config": "{\r\n    \"codeName\": \"[5]\",\r\n    \"fieldType\": \"object\",\r\n    \"descrption\": \"This is the sixth .json in the response array.\"\r\n}",
+                                                "project": "Foundations",
+                                                "apiResponseFields": [
+                                                    {
+                                                        "type": "API Response Field",
+                                                        "name": "fundingRate_6",
+                                                        "config": "{\r\n    \"codeName\": \"fundingRate\",\r\n    \"fieldType\": \"string\",\r\n    \"descrption\": \"This is the Funding Rate.\"\r\n}",
+                                                        "project": "Foundations",
+                                                        "apiResponseFields": [],
+                                                        "id": "37a13520-3656-4169-bd88-cc0b436cb5eb",
+                                                        "savedPayload": {
+                                                            "position": {
+                                                                "x": 12485.070732741071,
+                                                                "y": 40597.435657650996
+                                                            },
+                                                            "targetPosition": {
+                                                                "x": 12529.783412593923,
+                                                                "y": 40300.78640978346
+                                                            },
+                                                            "floatingObject": {
+                                                                "isPinned": false,
+                                                                "isFrozen": false,
+                                                                "isCollapsed": false,
+                                                                "angleToParent": 2,
+                                                                "distanceToParent": 3,
+                                                                "arrangementStyle": 0
+                                                            },
+                                                            "uiObject": {
+                                                                "isRunning": false
+                                                            },
+                                                            "parentNode": {
+                                                                "type": "API Response Field",
+                                                                "name": "Object-6",
+                                                                "id": "ee38d424-cd84-4100-8f9c-32bbbf6eb4cb"
+                                                            },
+                                                            "chainParent": {
+                                                                "type": "API Response Field",
+                                                                "name": "Object-6",
+                                                                "id": "ee38d424-cd84-4100-8f9c-32bbbf6eb4cb"
+                                                            },
+                                                            "referenceChildren": [
+                                                                {
+                                                                    "type": "API Response Field Reference",
+                                                                    "name": "fundingRate_6",
+                                                                    "id": "5b0862ae-3a68-4c28-bd90-63944c53a7ab"
+                                                                }
+                                                            ]
+                                                        }
+                                                    },
+                                                    {
+                                                        "type": "API Response Field",
+                                                        "name": "fundingTime_6",
+                                                        "config": "{\r\n    \"codeName\": \"fundingTime\",\r\n    \"fieldType\": \"number\",\r\n    \"descrption\": \"This is the timestamp of the paired funding rate.\"\r\n}",
+                                                        "project": "Foundations",
+                                                        "apiResponseFields": [],
+                                                        "id": "e134664c-822f-4bfe-b92b-7e3be08a4c87",
+                                                        "savedPayload": {
+                                                            "position": {
+                                                                "x": 12250.521288000662,
+                                                                "y": 40410.38871709338
+                                                            },
+                                                            "targetPosition": {
+                                                                "x": 12529.783412593923,
+                                                                "y": 40300.78640978346
+                                                            },
+                                                            "floatingObject": {
+                                                                "isPinned": false,
+                                                                "isFrozen": false,
+                                                                "isCollapsed": false,
+                                                                "angleToParent": 2,
+                                                                "distanceToParent": 3,
+                                                                "arrangementStyle": 0
+                                                            },
+                                                            "uiObject": {
+                                                                "isRunning": false
+                                                            },
+                                                            "parentNode": {
+                                                                "type": "API Response Field",
+                                                                "name": "Object-6",
+                                                                "id": "ee38d424-cd84-4100-8f9c-32bbbf6eb4cb"
+                                                            },
+                                                            "chainParent": {
+                                                                "type": "API Response Field",
+                                                                "name": "Object-6",
+                                                                "id": "ee38d424-cd84-4100-8f9c-32bbbf6eb4cb"
+                                                            },
+                                                            "referenceChildren": [
+                                                                {
+                                                                    "type": "API Response Field Reference",
+                                                                    "name": "fundingTime_6",
+                                                                    "id": "08e1afdd-0568-40ce-a4bc-f43926055e1b"
+                                                                },
+                                                                {
+                                                                    "type": "API Response Field Reference",
+                                                                    "name": "fundingTime_6",
+                                                                    "id": "bbcd4e73-deeb-43f2-af6f-d5ea0cfecd30"
+                                                                }
+                                                            ]
+                                                        }
+                                                    }
+                                                ],
+                                                "id": "e9ab2379-5b8c-4506-9b08-9c8982ec68bc",
+                                                "savedPayload": {
+                                                    "position": {
+                                                        "x": 12529.783412593923,
+                                                        "y": 40300.78640978346
+                                                    },
+                                                    "targetPosition": {
+                                                        "x": 12716.830353151543,
+                                                        "y": 40066.23696504305
+                                                    },
+                                                    "floatingObject": {
+                                                        "isPinned": false,
+                                                        "isFrozen": false,
+                                                        "isCollapsed": false,
+                                                        "angleToParent": 1,
+                                                        "distanceToParent": 3,
+                                                        "arrangementStyle": 0
+                                                    },
+                                                    "uiObject": {
+                                                        "isRunning": false
+                                                    },
+                                                    "parentNode": {
+                                                        "type": "API Response Field",
+                                                        "name": "rootObject",
+                                                        "id": "807b02b5-7bf6-4d6b-8ea3-d397c75eff5b"
+                                                    },
+                                                    "chainParent": {
+                                                        "type": "API Response Field",
+                                                        "name": "rootObject",
+                                                        "id": "807b02b5-7bf6-4d6b-8ea3-d397c75eff5b"
+                                                    }
+                                                }
+                                            }
+                                        ],
+                                        "id": "59a1ffb6-b1c3-4cf3-90ef-98e42b85fba8",
+                                        "savedPayload": {
+                                            "position": {
+                                                "x": 12716.830353151543,
+                                                "y": 40066.23696504305
+                                            },
+                                            "targetPosition": {
+                                                "x": 12416.830353151543,
+                                                "y": 40066.23696504305
+                                            },
+                                            "floatingObject": {
+                                                "isPinned": false,
+                                                "isFrozen": false,
+                                                "isCollapsed": true,
+                                                "angleToParent": 1,
+                                                "distanceToParent": 3,
+                                                "arrangementStyle": 0
+                                            },
+                                            "uiObject": {
+                                                "isRunning": false
+                                            },
+                                            "parentNode": {
+                                                "type": "API Response Schema",
+                                                "name": "New API Response Schema",
+                                                "id": "7194eaf3-1e3e-4210-b052-624653a802c6"
+                                            },
+                                            "chainParent": {
+                                                "type": "API Response Schema",
+                                                "name": "New API Response Schema",
+                                                "id": "7194eaf3-1e3e-4210-b052-624653a802c6"
+                                            }
+                                        }
+                                    },
+                                    "id": "86943603-4c51-4a7f-b1e1-a072e61f80aa",
+                                    "savedPayload": {
+                                        "position": {
+                                            "x": 12416.830353151543,
+                                            "y": 40066.23696504305
+                                        },
+                                        "targetPosition": {
+                                            "x": 12116.830353151543,
+                                            "y": 40066.23696504305
+                                        },
+                                        "floatingObject": {
+                                            "isPinned": false,
+                                            "isFrozen": false,
+                                            "isCollapsed": false,
+                                            "angleToParent": 1,
+                                            "distanceToParent": 3,
+                                            "arrangementStyle": 0
+                                        },
+                                        "uiObject": {
+                                            "isRunning": false
+                                        },
+                                        "parentNode": {
+                                            "type": "API Query Response",
+                                            "name": "200 Success",
+                                            "id": "f6769cba-4e60-4fcf-9369-ba7bbd3f2ebd"
+                                        },
+                                        "chainParent": {
+                                            "type": "API Query Response",
+                                            "name": "200 Success",
+                                            "id": "f6769cba-4e60-4fcf-9369-ba7bbd3f2ebd"
+                                        }
+                                    }
+                                },
+                                "id": "daca3964-a3dd-4ca8-aa64-0ef8575c535b",
+                                "savedPayload": {
+                                    "position": {
+                                        "x": 12116.830353151543,
+                                        "y": 40066.23696504305
+                                    },
+                                    "targetPosition": {
+                                        "x": 11816.830353151543,
+                                        "y": 40066.23696504305
+                                    },
+                                    "floatingObject": {
+                                        "isPinned": false,
+                                        "isFrozen": false,
+                                        "isCollapsed": false,
+                                        "angleToParent": 2,
+                                        "distanceToParent": 3,
+                                        "arrangementStyle": 0
+                                    },
+                                    "uiObject": {
+                                        "isRunning": false
+                                    },
+                                    "parentNode": {
+                                        "type": "API Query Responses",
+                                        "name": "New API Query Responses",
+                                        "id": "36e55d37-9159-4548-9b7c-e6c43534f8cd"
+                                    },
+                                    "chainParent": {
+                                        "type": "API Query Responses",
+                                        "name": "New API Query Responses",
+                                        "id": "36e55d37-9159-4548-9b7c-e6c43534f8cd"
+                                    }
+                                }
+                            },
+                            {
+                                "type": "API Query Response",
+                                "name": "403 WAF Limit Violated",
+                                "config": "{\r\n    \"codeName\": \"403\",\r\n    \"isError\": true\r\n}",
+                                "project": "Foundations",
+                                "apiResponseSchema": {
+                                    "type": "API Response Schema",
+                                    "name": "New API Response Schema",
+                                    "config": "{\"nodePath\": \"apiResponseReceivedObject.data\"}",
+                                    "project": "Foundations",
+                                    "id": "ffc672eb-f5f4-43e1-b6d3-a55010778b4c",
+                                    "savedPayload": {
+                                        "position": {
+                                            "x": 11366.830353151543,
+                                            "y": 40626.04458617838
+                                        },
+                                        "targetPosition": {
+                                            "x": 11516.830353151543,
+                                            "y": 40366.23696504305
+                                        },
+                                        "floatingObject": {
+                                            "isPinned": false,
+                                            "isFrozen": false,
+                                            "isCollapsed": false,
+                                            "angleToParent": 1,
+                                            "distanceToParent": 3,
+                                            "arrangementStyle": 0
+                                        },
+                                        "uiObject": {
+                                            "isRunning": false
+                                        },
+                                        "parentNode": {
+                                            "type": "API Query Response",
+                                            "name": "403 WAF Limit Violated",
+                                            "id": "388b0801-b8d1-4217-8a25-acdcf928c6a1"
+                                        },
+                                        "chainParent": {
+                                            "type": "API Query Response",
+                                            "name": "403 WAF Limit Violated",
+                                            "id": "388b0801-b8d1-4217-8a25-acdcf928c6a1"
+                                        }
+                                    }
+                                },
+                                "id": "94a32f5c-4509-4d6d-966d-aeeebc7c2e8c",
+                                "savedPayload": {
+                                    "position": {
+                                        "x": 12076.637974286874,
+                                        "y": 40216.23696504305
+                                    },
+                                    "targetPosition": {
+                                        "x": 11816.830353151543,
+                                        "y": 40066.23696504305
+                                    },
+                                    "floatingObject": {
+                                        "isPinned": false,
+                                        "isFrozen": false,
+                                        "isCollapsed": true,
+                                        "angleToParent": 2,
+                                        "distanceToParent": 3,
+                                        "arrangementStyle": 0
+                                    },
+                                    "uiObject": {
+                                        "isRunning": false
+                                    },
+                                    "parentNode": {
+                                        "type": "API Query Responses",
+                                        "name": "New API Query Responses",
+                                        "id": "36e55d37-9159-4548-9b7c-e6c43534f8cd"
+                                    },
+                                    "chainParent": {
+                                        "type": "API Query Responses",
+                                        "name": "New API Query Responses",
+                                        "id": "36e55d37-9159-4548-9b7c-e6c43534f8cd"
+                                    }
+                                }
+                            },
+                            {
+                                "type": "API Query Response",
+                                "name": "429 Rate Limit",
+                                "config": "{\r\n    \"codeName\": \"429\",\r\n    \"isError\": true\r\n}",
+                                "project": "Foundations",
+                                "apiResponseSchema": {
+                                    "type": "API Response Schema",
+                                    "name": "New API Response Schema",
+                                    "config": "{\"nodePath\": \"apiResponseReceivedObject.data\"}",
+                                    "project": "Foundations",
+                                    "id": "b8cadfcc-b265-43d5-a50c-cc20b28177ef",
+                                    "savedPayload": {
+                                        "position": {
+                                            "x": 11242.566284439616,
+                                            "y": 40530.69341261964
+                                        },
+                                        "targetPosition": {
+                                            "x": 11454.69831879558,
+                                            "y": 40318.56137826368
+                                        },
+                                        "floatingObject": {
+                                            "isPinned": false,
+                                            "isFrozen": false,
+                                            "isCollapsed": false,
+                                            "angleToParent": 2,
+                                            "distanceToParent": 3,
+                                            "arrangementStyle": 0
+                                        },
+                                        "uiObject": {
+                                            "isRunning": false
+                                        },
+                                        "parentNode": {
+                                            "type": "API Query Response",
+                                            "name": "429 Rate Limit",
+                                            "id": "4a01b19e-fd34-49f3-bf7b-f1bf03eec3d9"
+                                        },
+                                        "chainParent": {
+                                            "type": "API Query Response",
+                                            "name": "429 Rate Limit",
+                                            "id": "4a01b19e-fd34-49f3-bf7b-f1bf03eec3d9"
+                                        }
+                                    }
+                                },
+                                "id": "3ec155d9-e458-4c6e-85d9-e07ccfc91476",
+                                "savedPayload": {
+                                    "position": {
+                                        "x": 11966.830353151543,
+                                        "y": 40326.04458617838
+                                    },
+                                    "targetPosition": {
+                                        "x": 11816.830353151543,
+                                        "y": 40066.23696504305
+                                    },
+                                    "floatingObject": {
+                                        "isPinned": false,
+                                        "isFrozen": false,
+                                        "isCollapsed": true,
+                                        "angleToParent": 2,
+                                        "distanceToParent": 3,
+                                        "arrangementStyle": 0
+                                    },
+                                    "uiObject": {
+                                        "isRunning": false
+                                    },
+                                    "parentNode": {
+                                        "type": "API Query Responses",
+                                        "name": "New API Query Responses",
+                                        "id": "36e55d37-9159-4548-9b7c-e6c43534f8cd"
+                                    },
+                                    "chainParent": {
+                                        "type": "API Query Responses",
+                                        "name": "New API Query Responses",
+                                        "id": "36e55d37-9159-4548-9b7c-e6c43534f8cd"
+                                    }
+                                }
+                            },
+                            {
+                                "type": "API Query Response",
+                                "name": "418 Banned",
+                                "config": "{\r\n    \"codeName\": \"418\",\r\n    \"isError\": true\r\n}",
+                                "project": "Foundations",
+                                "apiResponseSchema": {
+                                    "type": "API Response Schema",
+                                    "name": "New API Response Schema",
+                                    "config": "{\"nodePath\": \"apiResponseReceivedObject.data\"}",
+                                    "project": "Foundations",
+                                    "id": "d52729bc-6908-4190-acaa-8f7b17f636b7",
+                                    "savedPayload": {
+                                        "position": {
+                                            "x": 11181.420156526574,
+                                            "y": 40459.1004952832
+                                        },
+                                        "targetPosition": {
+                                            "x": 11424.125254839058,
+                                            "y": 40282.76491959546
+                                        },
+                                        "floatingObject": {
+                                            "isPinned": false,
+                                            "isFrozen": false,
+                                            "isCollapsed": false,
+                                            "angleToParent": 2,
+                                            "distanceToParent": 3,
+                                            "arrangementStyle": 0
+                                        },
+                                        "uiObject": {
+                                            "isRunning": false
+                                        },
+                                        "parentNode": {
+                                            "type": "API Query Response",
+                                            "name": "418 Banned",
+                                            "id": "60799ef2-3352-4a4b-8851-b9ff9e7f0eae"
+                                        },
+                                        "chainParent": {
+                                            "type": "API Query Response",
+                                            "name": "418 Banned",
+                                            "id": "60799ef2-3352-4a4b-8851-b9ff9e7f0eae"
+                                        }
+                                    }
+                                },
+                                "id": "01467332-8326-49e8-b1eb-dd9e8c01bea4",
+                                "savedPayload": {
+                                    "position": {
+                                        "x": 11816.830353151543,
+                                        "y": 40366.23696504305
+                                    },
+                                    "targetPosition": {
+                                        "x": 11816.830353151543,
+                                        "y": 40066.23696504305
+                                    },
+                                    "floatingObject": {
+                                        "isPinned": false,
+                                        "isFrozen": false,
+                                        "isCollapsed": true,
+                                        "angleToParent": 2,
+                                        "distanceToParent": 3,
+                                        "arrangementStyle": 0
+                                    },
+                                    "uiObject": {
+                                        "isRunning": false
+                                    },
+                                    "parentNode": {
+                                        "type": "API Query Responses",
+                                        "name": "New API Query Responses",
+                                        "id": "36e55d37-9159-4548-9b7c-e6c43534f8cd"
+                                    },
+                                    "chainParent": {
+                                        "type": "API Query Responses",
+                                        "name": "New API Query Responses",
+                                        "id": "36e55d37-9159-4548-9b7c-e6c43534f8cd"
+                                    }
+                                }
+                            },
+                            {
+                                "type": "API Query Response",
+                                "name": "503 Unknown Error",
+                                "config": "{\r\n    \"codeName\": \"503\",\r\n    \"isError\": true\r\n}",
+                                "project": "Foundations",
+                                "apiResponseSchema": {
+                                    "type": "API Response Schema",
+                                    "name": "New API Response Schema",
+                                    "config": "{\r\n    \"nodePath\": \"apiResponseReceivedObject.data\"\r\n}",
+                                    "project": "Foundations",
+                                    "id": "ecc27524-f3d7-469a-9b71-97ef928d6f1f",
+                                    "savedPayload": {
+                                        "position": {
+                                            "x": 11147.215110880881,
+                                            "y": 40406.429343907716
+                                        },
+                                        "targetPosition": {
+                                            "x": 11407.022732016212,
+                                            "y": 40256.429343907716
+                                        },
+                                        "floatingObject": {
+                                            "isPinned": false,
+                                            "isFrozen": false,
+                                            "isCollapsed": false,
+                                            "angleToParent": 2,
+                                            "distanceToParent": 3,
+                                            "arrangementStyle": 0
+                                        },
+                                        "uiObject": {
+                                            "isRunning": false
+                                        },
+                                        "parentNode": {
+                                            "type": "API Query Response",
+                                            "name": "503 Unknown Error",
+                                            "id": "4909ff2d-1a0d-41ab-be0b-50a355a901f9"
+                                        },
+                                        "chainParent": {
+                                            "type": "API Query Response",
+                                            "name": "503 Unknown Error",
+                                            "id": "4909ff2d-1a0d-41ab-be0b-50a355a901f9"
+                                        }
+                                    }
+                                },
+                                "id": "dc2a5d62-0444-4682-98db-a5288d65a532",
+                                "savedPayload": {
+                                    "position": {
+                                        "x": 11666.830353151543,
+                                        "y": 40326.04458617838
+                                    },
+                                    "targetPosition": {
+                                        "x": 11816.830353151543,
+                                        "y": 40066.23696504305
+                                    },
+                                    "floatingObject": {
+                                        "isPinned": false,
+                                        "isFrozen": false,
+                                        "isCollapsed": true,
+                                        "angleToParent": 2,
+                                        "distanceToParent": 3,
+                                        "arrangementStyle": 0
+                                    },
+                                    "uiObject": {
+                                        "isRunning": false
+                                    },
+                                    "parentNode": {
+                                        "type": "API Query Responses",
+                                        "name": "New API Query Responses",
+                                        "id": "36e55d37-9159-4548-9b7c-e6c43534f8cd"
+                                    },
+                                    "chainParent": {
+                                        "type": "API Query Responses",
+                                        "name": "New API Query Responses",
+                                        "id": "36e55d37-9159-4548-9b7c-e6c43534f8cd"
+                                    }
+                                }
+                            }
+                        ],
+                        "id": "1b80d788-7c65-46c9-b99d-c9bc34c2f93f",
+                        "savedPayload": {
+                            "position": {
+                                "x": 11816.830353151543,
+                                "y": 40066.23696504305
+                            },
+                            "targetPosition": {
+                                "x": 11666.830353151543,
+                                "y": 39806.429343907716
+                            },
+                            "floatingObject": {
+                                "isPinned": false,
+                                "isFrozen": false,
+                                "isCollapsed": false,
+                                "angleToParent": 1,
+                                "distanceToParent": 3,
+                                "arrangementStyle": 0
+                            },
+                            "uiObject": {
+                                "isRunning": false
+                            },
+                            "parentNode": {
+                                "type": "API Endpoint",
+                                "name": "FundingRate",
+                                "id": "ba43d95e-f445-41da-a1a3-d8f6cccfef64"
+                            },
+                            "chainParent": {
+                                "type": "API Endpoint",
+                                "name": "FundingRate",
+                                "id": "ba43d95e-f445-41da-a1a3-d8f6cccfef64"
+                            }
+                        }
+                    },
+                    "id": "21b016dc-3338-4a26-9e11-ff5a710be527",
+                    "savedPayload": {
+                        "position": {
+                            "x": 11666.830353151543,
+                            "y": 39806.429343907716
+                        },
+                        "targetPosition": {
+                            "x": 11366.830353151543,
+                            "y": 39806.429343907716
+                        },
+                        "floatingObject": {
+                            "isPinned": false,
+                            "isFrozen": false,
+                            "isCollapsed": true,
+                            "angleToParent": 1,
+                            "distanceToParent": 3,
+                            "arrangementStyle": 0
+                        },
+                        "uiObject": {
+                            "isRunning": false
+                        },
+                        "parentNode": {
+                            "type": "API Version",
+                            "name": "Version 1",
+                            "id": "db879404-7235-4084-a8c5-ad81fcb442ee"
+                        },
+                        "chainParent": {
+                            "type": "API Version",
+                            "name": "Version 1",
+                            "id": "db879404-7235-4084-a8c5-ad81fcb442ee"
+                        }
+                    }
+                }
+            ],
+            "id": "3602dff8-e7bb-4a74-8345-5678bc0a3ba5",
+            "savedPayload": {
+                "position": {
+                    "x": 11366.830353151543,
+                    "y": 39806.429343907716
+                },
+                "targetPosition": {
+                    "x": 11066.830353151543,
+                    "y": 39806.429343907716
+                },
+                "floatingObject": {
+                    "isPinned": false,
+                    "isFrozen": false,
+                    "isCollapsed": false,
+                    "angleToParent": 1,
+                    "distanceToParent": 3,
+                    "arrangementStyle": 0
+                },
+                "uiObject": {
+                    "isRunning": false
+                },
+                "parentNode": {
+                    "type": "API Map",
+                    "name": "Binance_API",
+                    "id": "947d956d-0e87-4afc-905f-22b7b7aeb460"
+                },
+                "chainParent": {
+                    "type": "API Map",
+                    "name": "Binance_API",
+                    "id": "947d956d-0e87-4afc-905f-22b7b7aeb460"
+                }
+            }
+        }
+    ],
+    "id": "4934b3c1-ef31-4c14-9eba-69d3172fdf0c",
+    "savedPayload": {
+        "position": {
+            "x": 11066.830353151543,
+            "y": 39806.429343907716
+        },
+        "targetPosition": {
+            "x": 11066.830353151543,
+            "y": 39806.429343907716
+        },
+        "floatingObject": {
+            "isPinned": false,
+            "isFrozen": false,
+            "isCollapsed": true,
+            "angleToParent": 1,
+            "distanceToParent": 3,
+            "arrangementStyle": 0
+        },
+        "uiObject": {
+            "isRunning": false
+        },
+        "referenceChildren": [
+            {
+                "type": "API Map Reference",
+                "name": "Binance_API",
+                "id": "41d3eb3a-2e9d-4c95-80dd-883e5c659e4d"
+            }
+        ]
+    }
+}
